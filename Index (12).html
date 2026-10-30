@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>کافی‌نت تعویض پلاک تربت جام (غلامی) | استعلام • سبد • پرینت • پیگیری</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+:root{--c1:#f97316;--c2:#7c3aed;--bg:#0b1020;--ink:#0f172a;--mut:#64748b}
+body{margin:0;font-family:Vazirmatn,Tahoma,Arial,sans-serif;background:var(--bg);color:#e2e8f0;line-height:1.9;overflow-x:hidden}
+body[data-theme="jashn"]{--c1:#f59e0b;--c2:#ec4899}
+body[data-theme="shahadat"]{--c1:#334155;--c2:#991b1b}
+.bg3d{position:fixed;inset:0;z-index:-2;background:radial-gradient(1000px 500px at 85% -5%,#7c3aed44,transparent),radial-gradient(900px 500px at 10% 10%,#f9731633,transparent),linear-gradient(180deg,#0b1020,#111a33 60%,#0b1020)}
+body[data-theme="jashn"] .bg3d{background:radial-gradient(1000px 500px at 85% -5%,#ec489955,transparent),radial-gradient(900px 500px at 10% 10%,#f59e0b55,transparent),linear-gradient(180deg,#1a1005,#3b2a05 60%,#1a1005)}
+body[data-theme="shahadat"] .bg3d{background:radial-gradient(1000px 500px at 50% 0%,#991b1b44,transparent),linear-gradient(180deg,#000,#1a0505 60%,#000)}
+.container{max-width:1150px;margin:0 auto;padding:0 18px}
+.header{position:static;margin:8px 8px 0}
+.hd{background:rgba(255,255,255,.94);backdrop-filter:blur(14px);border-radius:14px;padding:7px 12px;display:flex;align-items:center;justify-content:space-between;gap:10px;color:var(--ink);box-shadow:0 15px 40px rgba(0,0,0,.35)}
+.brand{display:flex;align-items:center;gap:8px}
+.brand strong{display:block;line-height:1.4;font-size:12px}
+.brand span{font-size:10px;color:var(--mut)}
+.nav{display:flex;gap:12px;flex-wrap:wrap}
+.nav a{color:#334155;text-decoration:none;font-weight:800;font-size:12.5px}
+.btn{display:inline-block;border:0;cursor:pointer;text-decoration:none;border-radius:14px;padding:12px 22px;font-family:inherit;font-weight:800;transition:.25s;font-size:14px;text-align:center}
+.btn-p{background:linear-gradient(135deg,var(--c1),#fbbf24);color:#1a1005;box-shadow:0 10px 28px rgba(249,115,22,.4)}
+.btn-p:hover{transform:translateY(-2px)}
+.btn-g{background:#fff;border:1.5px solid #0f172a;color:#0f172a}
+.btn-d{background:#0f172a;color:#fff}
+.btn-r{background:linear-gradient(135deg,var(--c2),#06b6d4);color:#fff}
+.btn-ok{background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff}
+.w100{width:100%}
+.menu-btn{display:none;background:#f1f5f9;border:0;border-radius:10px;padding:8px 12px;font-size:18px}
+.hero{display:grid;grid-template-columns:1.2fr .95fr;gap:22px;padding:26px 18px 10px;align-items:start}
+.badge{display:inline-block;background:#052e16;border:1px solid #22c55e;color:#bbf7d0;padding:6px 16px;border-radius:100px;font-size:13px;margin-bottom:12px}
+.hero h1{font-size:34px;line-height:1.6;margin:0 0 10px;color:#fff}
+.grad{background:linear-gradient(90deg,#fdba74,#f472b6,#a78bfa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:#cbd5e1;font-size:15px}
+.hbtns{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.trust{display:flex;gap:8px;flex-wrap:wrap;font-size:12px;font-weight:800}
+.trust div{background:rgba(255,255,255,.1);border:1px solid #ffffff2a;color:#fff;padding:6px 12px;border-radius:100px}
+.road{margin-top:16px;height:70px;background:linear-gradient(180deg,#1e293b,#020617);border:1px solid #ffffff22;border-radius:16px;position:relative;overflow:hidden}
+.road .line{position:absolute;top:50%;right:0;left:0;height:4px;background-image:linear-gradient(90deg,#fbbf24 30px,transparent 30px);background-size:60px 4px;animation:road .8s linear infinite}
+@keyframes road{to{background-position:-60px 0}}
+.car{position:absolute;top:2px;font-size:36px;animation:car 5s ease-in-out infinite alternate}
+@keyframes car{from{right:0;transform:scaleX(-1)}to{right:calc(100% - 70px);transform:scaleX(-1)}}
+.glass{background:rgba(255,255,255,.96);border-radius:20px;color:var(--ink);box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.main-card{padding:20px}
+label{display:block;font-size:13px;font-weight:800;margin:10px 0;color:inherit}
+input,select,textarea{width:100%;margin-top:6px;border:2px solid #e2e8f0;border-radius:12px;padding:11px 12px;font-family:inherit;font-size:14px;background:#f8fafc;color:#0f172a}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--c1);background:#fff}
+.dark-card label{color:#fff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px auto}
+.stat{text-align:center;padding:14px}
+.stat strong{display:block;font-size:22px;color:var(--c1)}
+.stat span{font-size:12px;color:var(--mut)}
+.marquee{background:linear-gradient(90deg,var(--c1),var(--c2),#06b6d4,var(--c1));background-size:300% 100%;animation:sh 6s linear infinite;color:#fff;overflow:hidden;white-space:nowrap;padding:10px 0;font-weight:800;font-size:14px}
+@keyframes sh{to{background-position:300% 0}}
+.mq-in{display:inline-block;animation:mq 22s linear infinite}
+.mq-in span{margin:0 26px}
+@keyframes mq{to{transform:translateX(50%)}}
+.section{padding:40px 0}
+.sec-t{color:#fff;margin:0 0 4px;font-size:23px}
+.sec-s{color:#94a3b8;font-size:14px;margin:0 0 18px}
+.grid3d{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.card3d{background:linear-gradient(180deg,#ffffff,#fff7ed);border-radius:18px;padding:18px;color:var(--ink);box-shadow:0 15px 40px rgba(0,0,0,.4);transition:.3s;border:1px solid #fed7aa}
+.card3d:hover{transform:translateY(-6px);box-shadow:0 25px 60px rgba(249,115,22,.3)}
+.card3d h3{margin:8px 0 4px;font-size:14px}
+.card3d p{font-size:12px;color:var(--mut);margin:0;min-height:52px}
+.card3d.sel{outline:3px solid #22c55e}
+.icon3d{font-size:26px;width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,#fff7ed,#ffedd5);border:1px solid #fdba74}
+.cf{display:flex;align-items:center;justify-content:space-between;margin-top:10px;gap:8px}
+.cf b{font-size:11px;color:#7c3aed}
+.btn-s{background:#fff7ed;border:1.5px solid var(--c1);color:#c2410c;padding:7px 13px;font-size:12px;border-radius:10px;font-family:inherit;font-weight:800;cursor:pointer}
+.chkrow{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:12.5px;font-weight:800;color:#065f46}
+.chkrow input{width:18px;height:18px;margin:0;accent-color:#16a34a}
+.vip{border:2px solid #fbbf24!important;background:linear-gradient(180deg,#fffbeb,#fef3c7)!important}
+.vip-tag{display:inline-block;background:linear-gradient(90deg,#f59e0b,#ef4444);font-size:11px;font-weight:800;padding:3px 12px;border-radius:100px;color:#fff;margin-bottom:6px}
+.live-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.live{background:rgba(255,255,255,.96);border-radius:16px;padding:14px 16px;color:var(--ink);display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.dot{width:14px;height:14px;border-radius:50%;flex-shrink:0}
+.dot.on{background:#22c55e;box-shadow:0 0 0 6px rgba(34,197,94,.2);animation:pulse 1.8s infinite}
+.dot.off{background:#ef4444;box-shadow:0 0 0 6px rgba(239,68,68,.15)}
+.dot.issue{background:#f59e0b;box-shadow:0 0 0 6px rgba(245,158,11,.2);animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 10px rgba(34,197,94,.08)}}
+.live small{display:block;color:var(--mut);font-size:12px}
+.free-box{background:linear-gradient(135deg,#101b3d,#3b0764);border:1px solid #a78bfa55;border-radius:22px;padding:26px;color:#fff;box-shadow:0 20px 60px rgba(124,58,237,.35)}
+.plate-car{background:#fff;border-radius:16px;padding:14px;color:#0f172a;margin:12px 0;border:3px solid #0f172a}
+.plate-row{display:flex;gap:8px;align-items:stretch;direction:ltr}
+.plate-row input,.plate-row select{text-align:center;font-weight:900;font-size:18px;margin:0;background:#fff}
+.plate-flag{background:#1d4ed8;color:#fff;border-radius:8px;padding:6px 10px;font-size:11px;font-weight:900;text-align:center;line-height:1.6}
+.ptabs{display:flex;gap:8px;margin:10px 0}
+.ptab{flex:1;border:2px solid #ffffff33;background:transparent;color:#fff;border-radius:12px;padding:10px;font-family:inherit;font-weight:800;cursor:pointer}
+.ptab.on{background:#fbbf24;color:#1a1005;border-color:#fbbf24}
+.debt-row{display:flex;justify-content:space-between;background:rgba(255,255,255,.08);border:1px solid #ffffff22;border-radius:12px;padding:10px 14px;margin:8px 0;font-size:14px;font-weight:800}
+.bad{color:#fca5a5}.ok{color:#86efac}
+.total-box{background:linear-gradient(135deg,var(--c1),#fbbf24);color:#1a1005;border-radius:14px;padding:12px 16px;font-weight:900;margin-top:10px}
+.note-box{background:rgba(251,191,36,.12);border:1px dashed #fbbf24;border-radius:12px;padding:12px;font-size:13px;margin-top:10px;color:#fde68a}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}
+.panel-d{background:linear-gradient(180deg,#0f172a,#1e1b4b);border:1px solid #ffffff22;border-radius:20px;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.panel-d h3{color:#fff;margin-top:0}
+.panel-d p{color:#cbd5e1;font-size:13px}
+.cart-item{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.07);border:1px solid #ffffff22;border-radius:12px;padding:8px 12px;margin:6px 0;color:#fff;font-size:13px;font-weight:700}
+.cart-item button{background:#ef4444;border:0;color:#fff;border-radius:8px;padding:4px 10px;font-family:inherit;font-weight:800;cursor:pointer}
+.pay-card{background:#fff;color:#0f172a;border-radius:14px;padding:14px;margin-top:12px}
+.pay-num{display:flex;gap:8px;align-items:center;background:#0f172a;color:#fff;border-radius:12px;padding:10px 12px;font-weight:900;direction:ltr;font-size:16px;letter-spacing:1px;margin:6px 0}
+.pay-num button{background:#fbbf24;border:0;border-radius:8px;padding:6px 12px;font-family:inherit;font-weight:800;cursor:pointer;font-size:12px}
+.track-row{display:flex;gap:8px}
+.success{background:#ecfdf5;border:1px solid #6ee7b7;color:#065f46;border-radius:12px;padding:12px;margin-top:12px;font-size:13px}
+.steps-line{display:flex;gap:6px;margin:14px 0;flex-wrap:wrap}
+.stp{flex:1;min-width:90px;text-align:center;font-size:11px;font-weight:800;padding:8px 4px;border-radius:10px;background:rgba(255,255,255,.08);color:#94a3b8;border:1px solid #ffffff18}
+.stp.on{background:linear-gradient(135deg,#22c55e,#16a34a);color:#fff;border-color:#22c55e}
+.chat-box{margin-top:12px;background:rgba(255,255,255,.06);border:1px solid #ffffff22;border-radius:14px;padding:12px}
+.chat-msgs{max-height:240px;overflow:auto;display:flex;flex-direction:column;gap:8px;margin-bottom:10px}
+.msg{max-width:88%;padding:8px 12px;border-radius:12px;font-size:13px;line-height:1.7}
+.msg.me{background:linear-gradient(135deg,var(--c1),#fbbf24);color:#1a1005;align-self:flex-start;font-weight:700}
+.msg.them{background:#fff;color:#0f172a;align-self:flex-end}
+.msg.sys{background:transparent;color:#93c5fd;align-self:center;font-size:12px;border:1px dashed #60a5fa;padding:6px 12px}
+.msg img{max-width:100%;border-radius:8px;margin-top:6px}
+.chat-send{display:flex;gap:8px}
+.code-big{background:#0f172a;color:#fbbf24;border:2px dashed #fbbf24;border-radius:14px;padding:10px;text-align:center;font-weight:900;font-size:20px;direction:ltr;letter-spacing:2px;margin:10px 0}
+.pay-text{background:#fff;color:#0f172a;border-radius:12px;padding:12px;font-size:12.5px;white-space:pre-line;margin-top:10px;border:2px solid #fbbf24}
+.row-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.sup-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.sup-card{padding:24px;text-align:center}
+.sup-card .big{font-size:44px}
+.pv-id{font-size:20px;font-weight:900;background:#0f172a;color:#fff;border-radius:14px;padding:12px;text-align:center;letter-spacing:1px;direction:ltr;margin:10px 0}
+footer{background:#020617;border-top:1px solid #ffffff18;color:#64748b;font-size:12px;padding:16px 0;text-align:center}
+footer a{color:#94a3b8}
+#toast{position:fixed;bottom:22px;right:50%;transform:translateX(50%);background:#020617;border:1px solid var(--c1);color:#fff;padding:12px 22px;border-radius:14px;display:none;z-index:400;font-weight:800;max-width:92%;box-shadow:0 15px 40px rgba(0,0,0,.5)}
+.reveal{opacity:0;transform:translateY(28px);transition:.7s}
+.reveal.vis{opacity:1;transform:none}
+.modal{position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.72);padding:16px;backdrop-filter:blur(4px)}
+.modal.open{display:flex}
+.mbox{background:#fff;color:var(--ink);border-radius:20px;max-width:480px;width:100%;padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.6);max-height:92vh;overflow:auto}
+#adminPanel{position:fixed;inset:0;z-index:250;display:none;background:#0b1020;color:#e2e8f0;overflow:auto}
+#adminPanel.open{display:block}
+.adm-head{position:sticky;top:0;background:rgba(11,16,32,.96);backdrop-filter:blur(10px);padding:12px 18px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ffffff22;z-index:5}
+.tabs{display:flex;gap:8px;padding:14px 18px 0;flex-wrap:wrap}
+.tab{border:1px solid #ffffff2a;background:transparent;color:#cbd5e1;border-radius:12px;padding:9px 16px;font-family:inherit;font-weight:800;cursor:pointer;font-size:12.5px}
+.tab.on{background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;border-color:transparent}
+.ord{background:rgba(255,255,255,.05);border:1px solid #ffffff22;border-radius:16px;padding:16px;margin:12px 18px}
+.ord.new{border-color:#fbbf24}
+.ord-head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center}
+.code-chip{background:#fbbf24;color:#1a1005;font-weight:900;border-radius:100px;padding:4px 14px;font-size:13px;direction:ltr}
+.st-chip{border-radius:100px;padding:4px 14px;font-size:12px;font-weight:800}
+.st-pending{background:#fef3c7;color:#92400e}.st-accepted{background:#dbeafe;color:#1e40af}.st-doing{background:#e0e7ff;color:#5b21b6}.st-done{background:#dcfce7;color:#166534}.st-rejected{background:#fee2e2;color:#991b1b}
+.abtns{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.abtn{border:0;border-radius:10px;padding:8px 13px;font-family:inherit;font-weight:800;font-size:12px;cursor:pointer}
+.set-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:18px}
+.set-grid label{color:#cbd5e1}
+.set-grid input,.set-grid select,.set-grid textarea{background:#fff}
+#saveDot{font-size:12px;color:#86efac}
+table.adm-t{width:calc(100% - 36px);margin:12px 18px;border-collapse:collapse;font-size:12.5px;background:rgba(255,255,255,.04);border-radius:12px;overflow:hidden}
+table.adm-t th,table.adm-t td{border:1px solid #ffffff22;padding:8px;text-align:right;color:#e2e8f0}
+table.adm-t th{background:rgba(255,255,255,.08)}
+.print-tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+#printCanvas{max-width:100%;border-radius:12px;border:2px solid #e2e8f0;background:#fff}
+.bug-box{background:linear-gradient(135deg,#3b0764,#7c3aed);border:1px solid #a78bfa;border-radius:20px;padding:24px;color:#fff}
+@media(max-width:900px){.hero,.two{grid-template-columns:1fr}.grid3d{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.live-grid{grid-template-columns:1fr 1fr}.nav{display:none;position:absolute;top:74px;right:12px;left:12px;background:#fff;border-radius:14px;padding:14px;flex-direction:column;z-index:60}.nav.open{display:flex}.menu-btn{display:block}.hero h1{font-size:25px}.set-grid{grid-template-columns:1fr}.sup-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.grid3d,.live-grid{grid-template-columns:1fr}.plate-row{flex-wrap:wrap}}
+@media print{body>*{display:none}body.printing #printArea,body.printing #printArea *{display:block} #printArea{position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center} #printArea img{max-width:100%}}
+.gtabs{display:flex;gap:8px;margin:10px 0}
+.gtab{flex:1;border:2px solid #e2e8f0;background:#f8fafc;border-radius:12px;padding:10px;font-family:inherit;font-weight:800;cursor:pointer;font-size:13px}
+.gtab.on{background:#0f172a;color:#fff;border-color:#0f172a}
+.paper-row{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.crop-hint{font-size:12px;color:#475569;background:#f1f5f9;border-radius:10px;padding:8px;margin-top:8px;line-height:1.9}
+#printCanvas{touch-action:none;cursor:crosshair;max-height:420px}
+.chat-float-note{font-size:12px;color:#94a3b8}
+@media(max-width:560px){.paper-row{grid-template-columns:1fr}}
+/* ===== sectioning like vslshop but better ===== */
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.step4{background:rgba(255,255,255,.96);border-radius:16px;padding:14px 10px;text-align:center;color:#0f172a;box-shadow:0 12px 30px rgba(0,0,0,.35);position:relative;border:1px solid #fed7aa}
+.step4 b{display:block;font-size:13px;margin-top:6px}
+.step4 small{color:#64748b;font-size:11.5px}
+.step4 .n{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;margin:0 auto;background:linear-gradient(135deg,var(--c1),var(--c2));color:#fff;font-weight:900;font-size:14px}
+.step4:not(:last-child)::after{content:"◀";position:absolute;left:-12px;top:40%;color:#fbbf24;font-size:14px;z-index:2}
+.cat-pills{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.pill{border:2px solid #ffffff33;background:rgba(255,255,255,.08);color:#fff;border-radius:100px;padding:8px 16px;font-family:inherit;font-weight:800;font-size:12.5px;cursor:pointer}
+.pill.on{background:linear-gradient(135deg,var(--c1),#fbbf24);color:#1a1005;border-color:transparent}
+.cat-block{background:rgba(255,255,255,.06);border:1px solid #ffffff22;border-radius:20px;padding:16px;margin:14px 0}
+.cat-head{display:flex;align-items:center;gap:12px;margin-bottom:12px;color:#fff}
+.cat-head .ci{font-size:28px;width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:linear-gradient(135deg,var(--c1),var(--c2));flex-shrink:0}
+.cat-head h3{margin:0;font-size:16px}
+.cat-head p{margin:0;font-size:12.5px;color:#cbd5e1}
+.cat-head .cnt{margin-right:auto;background:#fbbf24;color:#1a1005;font-weight:900;border-radius:100px;padding:2px 12px;font-size:12px}
+.pay-steps{background:#fffbeb;border:2px solid #fbbf24;border-radius:14px;padding:14px;margin-top:10px;color:#0f172a;font-size:13px;line-height:2}
+.pay-steps .ps{display:flex;gap:8px;align-items:flex-start;margin:6px 0}
+.pay-steps .psn{background:#0f172a;color:#fbbf24;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-weight:900;font-size:12px;flex-shrink:0;margin-top:4px}
+.svc-adm{background:rgba(255,255,255,.06);border:1px solid #ffffff22;border-radius:12px;padding:10px;margin:8px 18px;font-size:12.5px}
+.svc-adm input,.svc-adm select{background:#fff;border-radius:8px;padding:7px 9px;font-size:12.5px;margin-top:4px}
+.svc-adm .row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+@media(max-width:900px){.steps4{grid-template-columns:1fr 1fr}.step4:not(:last-child)::after{display:none}}
+@media(max-width:560px){.steps4{grid-template-columns:1fr 1fr}.svc-adm .row3{grid-template-columns:1fr}}
+</style>
+</head>
+<body data-theme="adi">
+<div class="bg3d"></div>
+
+<header class="header"><div class="container hd">
+<div class="brand">
+<svg width="34" height="34" viewBox="0 0 64 64" aria-label="لوگو کافی‌نت غلامی"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f97316"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect x="2" y="2" width="60" height="60" rx="16" fill="url(#lg)"/><rect x="10" y="30" width="44" height="12" rx="3" fill="#fff"/><text x="32" y="39.5" text-anchor="middle" font-size="9" font-weight="900" fill="#0f172a" font-family="Tahoma">تربت جام</text><path d="M14 30 L20 20 H44 L50 30 Z" fill="#0f172a"/><circle cx="20" cy="44" r="5" fill="#0f172a"/><circle cx="20" cy="44" r="2" fill="#fbbf24"/><circle cx="44" cy="44" r="5" fill="#0f172a"/><circle cx="44" cy="44" r="2" fill="#fbbf24"/><text x="32" y="14" text-anchor="middle" font-size="10" font-weight="900" fill="#fff" font-family="Tahoma">غلامی</text></svg>
+<div><strong id="siteName" data-t="name">کافی‌نت تعویض پلاک تربت جام (غلامی)</strong><span id="siteSub" data-t="sub">استعلام • سبد چندتایی • پرینت • پیگیری • سراسری</span></div></div>
+<nav class="nav" id="nav"><a href="#services">خدمات</a><a href="#free">استعلام</a><a href="#order">سبد و ثبت</a><a href="#print">پرینت</a><a href="#status">وضعیت</a><a href="#track">پیگیری</a><a href="#chat">چت با کارشناس</a><a href="#support">پشتیبانی</a></nav>
+<div class="hacts" style="display:flex;gap:8px;align-items:center"><a class="btn btn-p" href="#free" style="padding:7px 12px;font-size:13px">استعلام رایگان</a><button class="menu-btn" id="menuBtn">☰</button></div>
+</div></header>
+
+<section class="hero container">
+<div class="reveal"><div class="badge">🟢 <span data-t="badge">آنلاین هستیم — استعلام اول رایگان است</span></div>
+<h1><span data-t="heroTitle">تعویض پلاک تربت جام، بدون صف و بدون استرس</span><br><span class="grad" data-t="heroTitle2">استعلام، سبد، پرینت و پیگیری یک‌جا</span></h1>
+<p class="lead" data-t="heroLead">اول پلاک دقیق را وارد کن و رایگان استعلام بگیر. بعد چند خدمت را با هم انتخاب کن، تخفیف بزن، پرداخت کن و با کد پیگیری کارت را تا آخر دنبال کن. رسیدهایت را هم از چت داخل سایت با عکس بفرست.</p>
+<div class="hbtns"><a href="#free" class="btn btn-p">🔍 استعلام رایگان پلاک</a><a href="#order" class="btn btn-g">🧺 سبد و ثبت سفارش</a><a href="#print" class="btn btn-r">🖨️ پرینت و برش عکس</a></div>
+<div class="trust"><div>🧾 <span data-t="trust1">رسید رسمی</span></div><div>🔒 <span data-t="trust2">محرمانگی مدارک</span></div><div>⚡ <span data-t="trust3">پاسخ سریع</span></div><div>📞 <bdi id="trustPhone">09019791215</bdi></div></div>
+<div class="road"><div class="car">🚗💨</div><div class="line"></div></div>
+</div>
+<div class="reveal"><div class="glass main-card">
+<h3 style="margin-top:0">⚡ پیگیری سریع با کد</h3>
+<p style="color:#64748b;font-size:13px">کد پیگیری‌ات را بزن، وضعیت را ببین و با کارشناس چت کن (متن + عکس).</p>
+<div class="track-row"><input id="heroTrack" placeholder="مثال: PSH-4821" style="margin:0" dir="ltr"><button class="btn btn-d" id="heroTrackBtn">بررسی</button></div>
+<div id="heroTrackRes"></div>
+<hr>
+<p style="font-size:13px;color:#64748b">💬 پشتیبانی فقط از راه چت داخل سایت + پی‌وی روبیکا (داخل پیام‌رسان سرچ کن، نه روبینو):</p>
+<p class="pv-id" style="font-size:17px">@<span class="rubika-id-only">Mm1214__Mm1214</span></p>
+<button class="btn btn-r w100" onclick="copyRubikaId()">📋 کپی آیدی پی‌وی</button>
+</div></div>
+</section>
+
+<div class="stats container reveal">
+<div class="stat glass"><strong><span class="counter" data-tn="2450">0</span>+</strong><span>سفارش موفق</span></div>
+<div class="stat glass"><strong><span class="counter" data-tn="8">0</span></strong><span>خدمت تخصصی</span></div>
+<div class="stat glass"><strong>۲۴/۷</strong><span>ثبت و پشتیبانی</span></div>
+<div class="stat glass"><strong><span class="counter" data-tn="98">0</span>٪</strong><span>رضایت مشتریان</span></div>
+</div>
+
+<div class="marquee"><div class="mq-in"><span data-t="banner">🔍 استعلام اول رایگان است ★ بدون تسویه عوارض، نوبت می‌سوزد ★ نوبت تعویض پلاک فقط رزرو می‌کنیم (حضوری طبق قانون) ★ رسیدت را از چت داخل سایت با عکس بفرست ★</span></div></div>
+
+<section id="status" class="section container">
+<h2 class="sec-t reveal">📡 وضعیت لحظه‌ای سرویس‌ها</h2>
+<p class="sec-s reveal" data-t="statusSub">سبز یعنی وصله و فعال، نارنجی یعنی اختلال موقت، قرمز یعنی غیرفعال. این تابلو از پنل مدیریت به‌روز می‌شود.</p>
+<div class="live-grid reveal" id="liveGrid"></div>
+<div class="note-box reveal" data-t="reserveNote">⚠️ گرفتن نوبت تعویض پلاک بر اساس قانون به‌صورت حضوری انجام می‌شود؛ ما برای رفاه حال شما فقط <b>رزرو</b> می‌کنیم تا روز مراجعه معطل نشوی.</div>
+</section>
+
+<section id="services" class="section container">
+<h2 class="sec-t reveal">🧺 خدمات — قدم‌به‌قدم مثل آب خوردن</h2>
+<p class="sec-s reveal">مثل اون سایت‌های پلنی ولی بهتر: اول دسته رو انتخاب کن، بعد چند خدمت رو با هم بزن تو سبد. همه قیمت‌ها و حتی اسم و متن هر کارت از پنل مدیریت قابل تغییر و حذف است.</p>
+<div class="steps4 reveal">
+<div class="step4"><div class="n">۱</div><b>🔍 استعلام رایگان</b><small>پلاک + کد ملی مالک</small></div>
+<div class="step4"><div class="n">۲</div><b>🧺 انتخاب خدمت</b><small>چندتایی + تخفیف</small></div>
+<div class="step4"><div class="n">۳</div><b>💳 پرداخت کارمزد</b><small>کارت + رسید در چت</small></div>
+<div class="step4"><div class="n">۴</div><b>📦 پیگیری با کد</b><small>چت + انجام کار</small></div>
+</div>
+<div class="cat-pills reveal" id="catPills">
+<button class="pill on" data-cat="all">همه ✨</button>
+<button class="pill" data-cat="pelak">🚗 تعویض پلاک</button>
+<button class="pill" data-cat="avarez">🧾 عوارض و تسویه</button>
+<button class="pill" data-cat="sakha">🪪 سخا و مدارک</button>
+</div>
+<div style="margin-bottom:6px" class="reveal"><input id="search" placeholder="جست‌وجو... سخا، خلافی، مالیات" style="max-width:340px;background:#fff"></div>
+<div class="cat-block reveal" data-block="pelak">
+<div class="cat-head"><div class="ci">🚗</div><div><h3 data-t="cat1t">تعویض پلاک — رزرو نوبت</h3><p data-t="cat1d">نوبت خودرو و موتور + راهنمای حضوری. بدون تسویه عوارض، نوبت می‌سوزد.</p></div><span class="cnt" id="cntPelak"></span></div>
+<div class="grid3d" id="gridPelak"></div>
+</div>
+<div class="cat-block reveal" data-block="avarez">
+<div class="cat-head"><div class="ci">🧾</div><div><h3 data-t="cat2t">عوارض و تسویه — بدهی‌ها</h3><p data-t="cat2d">خلافی، مالیات، شهرداری، آزادراهی + بسته کامل. مبلغ‌ها را مدیر تعیین می‌کند.</p></div><span class="cnt" id="cntAvarez"></span></div>
+<div class="grid3d" id="gridAvarez"></div>
+</div>
+<div class="cat-block reveal" data-block="sakha">
+<div class="cat-head"><div class="ci">🪪</div><div><h3 data-t="cat3t">سخا و مدارک</h3><p data-t="cat3d">ثبت‌نام سخا، احراز نشانی و خدمات مدارکی.</p></div><span class="cnt" id="cntSakha"></span></div>
+<div class="grid3d" id="gridSakha"></div>
+</div>
+<div id="serviceGrid" style="display:none"></div>
+<div class="reveal" style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn btn-ok" id="addSelBtn">➕ افزودن انتخاب‌ها به سبد</button><a class="btn btn-g" href="#order">رفتن به سبد 🧺</a></div>
+</section>
+<section id="free" class="section container">
+<div class="free-box reveal">
+<h2 style="margin:0">🔍 استعلام دقیق پلاک — رایگان</h2>
+<p style="color:#c4b5fd;font-size:14px">نوع پلاک را انتخاب کن، رقم‌ها را داخل کادر پلاک وارد کن + کد ملی مالک (برگ سبز) و موبایل. نتیجه هر ۴ عوارض + جمع بدهی را می‌بینی و یک نسخه‌اش برای مدیریت هم ذخیره می‌شود.</p>
+<div class="ptabs"><button class="ptab on" id="ptCar">🚗 پلاک خودرو (ایران)</button><button class="ptab" id="ptMoto">🏍️ پلاک موتور</button></div>
+<div class="plate-car" id="carPlate">
+<div class="plate-row">
+<input id="pl2" maxlength="2" inputmode="numeric" placeholder="۱۲" style="width:70px" dir="ltr">
+<select id="plL" style="flex:1"><option>الف</option><option selected>ب</option><option>پ</option><option>ت</option><option>ث</option><option>ج</option><option>د</option><option>ز</option><option>س</option><option>ش</option><option>ص</option><option>ط</option><option>ع</option><option>ق</option><option>ک</option><option>گ</option><option>ل</option><option>م</option><option>ن</option><option>و</option><option>هـ</option><option>ی</option><option>تشریفات</option></select>
+<input id="pl3" maxlength="3" inputmode="numeric" placeholder="۳۴۵" style="width:90px" dir="ltr">
+<div class="plate-flag">ایران<br><input id="plIr" maxlength="2" inputmode="numeric" placeholder="۶۷" style="width:56px;background:transparent;border:0;color:#fff;font-size:16px" dir="ltr"></div>
+</div></div>
+<div class="plate-car" id="motoPlate" style="display:none">
+<div class="plate-row"><input id="mo3" maxlength="3" inputmode="numeric" placeholder="۱۲۳" style="width:90px" dir="ltr"><span style="align-self:center;font-weight:900">—</span><input id="mo5" maxlength="5" inputmode="numeric" placeholder="۴۵۶۷۸" style="flex:1" dir="ltr"></div>
+<p style="font-size:12px;color:#64748b;margin:6px 0 0">پلاک موتور: ۳ رقم اول + ۵ رقم دوم</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:10px" id="freeIds">
+<label style="color:#fff">کد ملی مالک (برگ سبز) — ۱۰ رقم<input id="ownerCode" maxlength="10" inputmode="numeric" placeholder="مثال: 1234567890" dir="ltr"></label>
+<label style="color:#fff">موبایل شما — ۱۱ رقم<input id="freePhone" inputmode="numeric" placeholder="09..." dir="ltr"></label>
+</div>
+<button class="btn btn-p w100" id="freeBtn" style="margin-top:10px">استعلام رایگان بزن 🔍</button>
+<div id="freeRes" style="display:none;margin-top:12px">
+<div class="debt-row" id="row-d1"><span>🧾 خلافی</span><span class="bad" id="d1">دارد ❌</span></div>
+<div class="debt-row" id="row-d2"><span>🏛️ مالیات نقل‌وانتقال</span><span class="bad" id="d2">دارد ❌</span></div>
+<div class="debt-row" id="row-d3"><span>🏙️ عوارض شهرداری</span><span class="bad" id="d3">دارد ❌</span></div>
+<div class="debt-row" id="row-d4"><span>🛣️ عوارض آزادراهی</span><span class="bad" id="d4">دارد ❌</span></div>
+<div id="debtMoney" style="font-size:12px;color:#cbd5e1"></div>
+<div class="total-box" id="debtTotal"></div>
+<div class="note-box">✅ اگه مطمئنی پرداخت شده، رسیدت را از <b>چت داخل سایت</b> (با عکس) بفرست یا در پی‌وی روبیکا: <bdi dir="ltr">@<span class="rubika-id-only">Mm1214__Mm1214</span></bdi> <button class="btn btn-r" style="padding:6px 14px;font-size:12px" onclick="copyRubikaId()">📋 کپی آیدی</button><br>📞 پشتیبانی تلفنی: <bdi id="freePhoneShow">09019791215</bdi></div>
+<div class="row-btns"><button class="btn btn-p" id="toOrderBtn">🧺 افزودن تسویه همین پلاک به سبد</button><button class="btn btn-r" id="copyFreeBtn">📋 کپی متن برای روبیکا</button></div>
+</div>
+</div>
+</section>
+
+<section id="order" class="section container two">
+<div class="panel-d reveal dark-card">
+<h3>🧺 سبد و ثبت سفارش</h3>
+<p>خدمت‌ها را انتخاب کن → <b style="color:#fbbf24">کد پیگیری + کارت پرداخت</b> می‌گیری → واریز کن → رسید را در <b>چت با کارشناس</b> بفرست → بعد از تایید، کارت پیش می‌رود.</p>
+<div id="cartList"><p style="color:#94a3b8;font-size:13px">سبد خالی است — از بخش خدمات انتخاب کن یا استعلام بزن.</p></div>
+<div class="track-row"><input id="couponIn" placeholder="کد تخفیف داری؟ این‌جا بزن" style="margin:0"><button class="btn btn-ok" id="couponBtn">اعمال</button></div>
+<div id="couponMsg" style="font-size:13px;margin-top:6px"></div>
+<div class="total-box" id="cartTotal" style="display:none"></div>
+<form id="orderForm" style="margin-top:12px">
+<label>نام و نام خانوادگی<input name="name" id="oName" required placeholder="مثال: علی غلامی"></label>
+<label>موبایل (۱۱ رقم با 09)<input name="phone" id="oPhone" required inputmode="numeric" placeholder="09..." dir="ltr"></label>
+<label>کد ملی مالک/فروشنده (برگ سبز) — ۱۰ رقم<input name="owner" id="oOwner" required maxlength="10" inputmode="numeric" placeholder="10 رقم" dir="ltr"></label>
+<label>شماره پلاک (خلاصه)<input name="plate" id="orderPlate" placeholder="از استعلام خودکار پر می‌شود"></label>
+<label>توضیح<textarea name="desc" rows="2" placeholder="مثال: پراید — عجله دارم"></textarea></label>
+<button class="btn btn-p w100" type="submit">دریافت کد + مشخصات پرداخت ✅</button>
+</form>
+<div id="orderResult"></div>
+<div class="pay-card">
+<h4 style="margin:0 0 6px">💳 پرداخت — کارت و شبا (کپی با یک لمس)</h4>
+<p style="font-size:12px;color:#64748b;margin:0" data-t="payNote">لینک پرداخت به‌زودی فعال می‌شود؛ فعلا با کارت واریز کن و رسید را از چت بفرست.</p>
+<div class="pay-num"><span id="cardNum" dir="ltr">6219 8614 7855 7993</span><button onclick="copyCard()">📋 کپی کارت</button></div>
+<div class="pay-num" style="font-size:13px"><span id="shebaNum" dir="ltr">IR660560611828005490053702</span><button onclick="copySheba()">📋 کپی شبا</button></div>
+<div id="payLinkBox"></div>
+<p style="font-size:12px;color:#166534;background:#ecfdf5;border-radius:10px;padding:8px" data-t="bankName">🏦 بلو‌بانک — به‌نام کافی‌نت غلامی</p>
+</div>
+</div>
+<div class="reveal" id="track">
+<div class="panel-d dark-card">
+<h3>📦 پیگیری با کد</h3>
+<p>کد را بزن و وضعیت سفارشت را ببین. برای گفت‌وگو با کارشناس برو به بخش <a href="#chat"><b>چت با کارشناس</b></a>.</p>
+<div class="track-row"><input id="trackCode" placeholder="PSH-..." dir="ltr" style="margin:0"><button class="btn btn-p" id="trackBtn">بررسی</button></div>
+<div id="trackResult"></div>
+</div>
+<div class="glass" style="padding:18px;margin-top:14px">
+<h3 style="margin:0 0 6px;font-size:15px">❓ کدت را گم کردی؟</h3>
+<p style="font-size:13px;color:#64748b;margin:0 0 10px">زنگ بزن: <a href="tel:09019791215"><bdi class="phone-only">09019791215</bdi></a></p>
+<div class="row-btns"><a class="btn btn-d phone-link" href="tel:09019791215">📞 زنگ به پشتیبانی</a><button class="btn btn-r" onclick="copyRubikaId()">📋 کپی آیدی پی‌وی روبیکا</button></div>
+</div>
+</div>
+</section>
+
+
+<section id="chat" class="section container">
+<div class="panel-d reveal vis dark-card">
+<h3>💬 چت با کارشناس — جدا و اختصاصی</h3>
+<p>کد پیگیری‌ات را بزن تا گفت‌وگوی همان سفارش باز شود. متن + عکس رسید بفرست، کارشناس همین‌جا جواب می‌دهد. چت از بخش پیگیری جداست.</p>
+<div class="track-row"><input id="chatCode" placeholder="PSH-..." dir="ltr" style="margin:0"><button class="btn btn-p" id="chatBtn">باز کردن چت 💬</button></div>
+<div id="chatResult"><p class="chat-float-note">هنوز کدی وارد نشده — کد پیگیری را بزن تا چت باز شود.</p></div>
+</div>
+</section>
+
+<section id="print" class="section container">
+<div class="glass reveal" style="padding:24px">
+<h2 style="margin:0">🖨️ پرینت — عکس بفرست، برش بزن، با کیفیت چاپ کن</h2>
+<p style="color:#64748b;font-size:14px" data-t="printSub">عکس مدرک یا رسید را انتخاب کن، بچرخان و برش بزن، بعد با کیفیت بالا دانلود یا چاپ کن.</p>
+<input type="file" id="printFile" accept="image/*">
+<div class="crop-hint">✂️ برای حذف دست و حاشیه اضافه (مثل عکس کارت ملی): روی عکس با انگشت یا موس <b>بکش</b> تا کادر انتخاب شود، بعد «برش ناحیه انتخابی» را بزن. دکمه «برش مربع وسط» هم برش سریع وسط عکس است.</div>
+<div class="paper-row">
+<label>📄 سایز برگه<select id="paperSize"><option value="A4">A4 — ۸٬۰۰۰ تومان در هر برگ</option><option value="A5">A5 — ۴٬۰۰۰ تومان در هر برگ</option></select></label>
+<label>🔢 تعداد برگ<input id="paperCount" type="number" min="1" value="1" dir="ltr"></label>
+</div>
+<div class="paper-row">
+<label>نام و نام خانوادگی<input id="printName" placeholder="مثال: علی غلامی"></label>
+<label>موبایل<input id="printPhone" inputmode="numeric" placeholder="09..." dir="ltr"></label>
+</div>
+<div class="total-box" id="printTotal" style="margin-top:10px">💰 هزینه پرینت: ۸٬۰۰۰ تومان</div>
+<div class="print-tools">
+<button class="btn btn-g" id="rotBtn">🔄 چرخش ۹۰ درجه</button>
+<button class="btn btn-g" id="cropBtn">✂️ برش مربع وسط (کات)</button>
+<button class="btn btn-g" id="cropSelBtn">✂️ برش ناحیه انتخابی</button>
+<button class="btn btn-d" id="dlBtn">⬇️ دانلود با کیفیت بالا</button>
+<button class="btn btn-p" id="doPrintBtn">🖨️ چاپ</button>
+<button class="btn btn-ok" id="sendPrintBtn">📤 ارسال به کافی‌نت</button>
+<label style="font-size:12px">🔍 زوم<input type="range" id="zoomR" min="50" max="200" value="100"></label>
+</div>
+<div style="margin-top:12px;text-align:center"><canvas id="printCanvas"></canvas></div>
+<div id="printArea" style="display:none"><img id="printImg"></div>
+<div id="printSendResult"></div>
+<div class="note-box" style="color:#92400e;background:#fef3c7" data-t="printNote">⚠️ مخصوص تعویض پلاک: در صورت نداشتن <b>معاینه فنی، وکالت‌نامه یا بیمه</b>، با پرداخت حداقل <b>۳۵ هزار تومان</b> درخواست بده تا با پلاکت <b>رسید رسمی</b> صادر شود.</div>
+</div>
+</section>
+
+<section id="support" class="section container">
+<h2 class="sec-t reveal">پشتیبانی — اول از چت داخل سایت 🤝</h2>
+<p class="sec-s reveal">سریع‌ترین راه: بعد از ثبت سفارش، از <b>چت داخل سایت</b> (همین صفحه، بخش پیگیری) متن + عکس بفرست. اگه خواستی پی‌وی روبیکا هم هست — آیدی را کپی کن و داخل <b>پیام‌رسان</b> سرچ کن (نه روبینو).</p>
+<div class="sup-grid">
+<div class="glass sup-card reveal" style="border:2px solid #7c3aed"><div class="big">💬</div><h3>چت داخل سایت (پیشنهاد اول)</h3><p style="color:#64748b;font-size:14px">کد پیگیری‌ات را در بخش «چت با کارشناس» بزن و از همان‌جا متن + عکس رسید بفرست. کارشناس همان‌جا جواب می‌دهد.</p><a class="btn btn-p w100" href="#chat">رفتن به چت با کارشناس 💬</a></div>
+<div class="glass sup-card reveal" style="border:2px solid #7c3aed"><div class="big">📩</div><h3>پی‌وی روبیکا (پیام‌رسان)</h3><p class="pv-id">@<span class="rubika-id-only">Mm1214__Mm1214</span></p><button class="btn btn-r w100" onclick="copyRubikaId()">📋 کپی آیدی پی‌وی</button><p style="font-size:12px;color:#64748b">روبیکا ← پیام‌رسان ← ذره‌بین 🔍 ← سرچ آیدی ← ارسال پیام. لینک rubika.ir می‌رود روی روبینو، پس سرچ کن.</p></div>
+<div class="glass sup-card reveal"><div class="big">📞</div><h3>پشتیبانی تلفنی</h3><p style="font-weight:900"><bdi class="phone-only">09019791215</bdi></p><a class="btn btn-d w100 phone-link" href="tel:09019791215">تماس گرفتن</a><p style="font-size:12px;color:#64748b" data-t="hours">شنبه تا پنجشنبه ۸ تا ۲۱ • جمعه ۱۰ تا ۱۸</p></div>
+<div class="glass sup-card reveal"><div class="big">🎁</div><h3>بخش جوایز — باگ پیدا کن!</h3><p style="color:#64748b;font-size:14px" data-t="bugText">سایت تازه درست شده 🎉 هر باگی پیدا کنی و گزارش بدی، <b>۳۰ هزار تومان جایزه</b> می‌گیری. گزارش را از چت داخل سایت با عکس و کد پیگیری بفرست.</p><a class="btn btn-g w100" href="#chat">گزارش باگ از چت 🐞</a></div>
+</div>
+</section>
+
+<footer><div class="container">© <span id="year"></span> <span id="footName" data-t="name">کافی‌نت تعویض پلاک تربت جام (غلامی)</span> • تسویه فقط با رسید رسمی • <a href="#" id="adminLink">ورود مدیریت 🔐</a></div></footer>
+<div id="toast"></div>
+
+<div class="modal" id="gateModal"><div class="mbox">
+<h3 style="margin:0" data-t="gateTitle">👋 خوش اومدی!</h3>
+<p style="color:#64748b;font-size:13px" data-t="gateSub">مشتری جدید: ثبت‌نام کن. قبلا ثبت‌نام کردی: فقط با کد ملی وارد شو.</p>
+<div class="gtabs"><button class="gtab on" id="gtLogin" type="button">🔑 ورود (فقط کد ملی)</button><button class="gtab" id="gtReg" type="button">📝 ثبت‌نام اول</button></div>
+<div id="gateLoginDiv">
+<label>کد ملی — ۱۰ رقم<input id="lCode" maxlength="10" inputmode="numeric" placeholder="10 رقم" dir="ltr"></label>
+<button class="btn btn-p w100" id="loginGo">ورود ✅</button>
+<p id="lastUserHint" style="font-size:12.5px;color:#64748b;margin:8px 0 0"></p>
+</div>
+<div id="gateRegDiv" style="display:none">
+<label>نام و نام خانوادگی<input id="gName" placeholder="مثال: علی غلامی"></label>
+<label>کد ملی — دقیق ۱۰ رقم<input id="gCode" maxlength="10" inputmode="numeric" placeholder="10 رقم" dir="ltr"></label>
+<label>شماره تماس — ۱۱ رقم با 09<input id="gPhone" inputmode="numeric" placeholder="09..." dir="ltr"></label>
+<button class="btn btn-p w100" id="gateGo">ثبت‌نام و ورود ✅</button>
+</div>
+<div id="gateMsg" style="font-size:13px;margin-top:8px"></div>
+</div></div>
+
+<div class="modal" id="passModal"><div class="mbox">
+<h3 style="margin:0">🔐 ورود مدیریت</h3>
+<p style="color:#64748b;font-size:13px">رمز مدیریت را وارد کن.</p>
+<input type="password" id="passIn" placeholder="رمز مدیریت" dir="ltr">
+<div class="row-btns"><button class="btn btn-d" id="passGo" style="flex:1">ورود</button><button class="btn btn-g" id="passX">بستن</button></div>
+</div></div>
+
+<div class="modal" id="pvModal"><div class="mbox">
+<h3 style="margin:0">💬 راهنمای پی‌وی پشتیبانی</h3>
+<p style="color:#64748b;font-size:13px;margin:6px 0">دکمه «رفتن» حذف شده — فقط کپی کن و داخل پیام‌رسان سرچ کن (نه روبینو).</p>
+<div class="pv-id" id="pvIdText" dir="ltr">@Mm1214__Mm1214</div>
+<div class="row-btns"><button class="btn btn-r w100" onclick="copyRubikaId()">📋 کپی آیدی پی‌وی</button></div>
+<div class="row-btns"><button class="btn btn-d w100" onclick="closePv()">متوجه شدم ✅</button></div>
+</div></div>
+
+<div id="adminPanel">
+<div class="adm-head"><div><b>🛠️ پنل مدیریت پیشرفته</b> <span id="saveDot">● ذخیره خودکار روشن است</span><br><small style="color:#94a3b8" id="admCount"></small></div><div style="display:flex;gap:8px"><button class="btn btn-p" id="admClose" style="padding:8px 16px">بستن ✖</button></div></div>
+<div class="tabs"><button class="tab on" data-tab="orders">📥 سفارش‌ها و چت</button><button class="tab" data-tab="inqs">🔍 استعلام‌ها</button><button class="tab" data-tab="prints">🖨️ پرینت‌ها</button><button class="tab" data-tab="site">⚙️ سایت و قیمت‌ها</button><button class="tab" data-tab="pay">💳 پرداخت و تخفیف</button><button class="tab" data-tab="live">📡 وضعیت سرویس‌ها</button><button class="tab" data-tab="texts">✏️ متن‌ها و تم</button></div>
+<div id="tab-orders"></div>
+<div id="tab-inqs"></div><div id="tab-prints" style="display:none"></div>
+<div id="tab-site" style="display:none"><div class="note-box" style="margin:12px 18px">هر چیزی این‌جا بنویسی <b>همان لحظه ذخیره و روی سایت اعمال می‌شود</b>.</div><div class="set-grid">
+<label>نام سایت<input data-set="name"></label><label>زیرعنوان<input data-set="sub"></label>
+<label>آیدی روبیکا (بدون @)<input data-set="rubika" dir="ltr"></label><label>تلفن پشتیبانی<input data-set="phone" dir="ltr"></label>
+<label>ساعت کاری<input data-set="hours"></label><label>متن بالای سایت (بنر متحرک)<input data-set="banner"></label>
+<label>تیتر اصلی<input data-set="heroTitle"></label><label>تیتر دوم<input data-set="heroTitle2"></label>
+<label>توضیح هیرو<textarea data-set="heroLead" rows="2"></textarea></label><label>اعتماد ۱<input data-set="trust1"></label>
+<label>اعتماد ۲<input data-set="trust2"></label><label>اعتماد ۳<input data-set="trust3"></label>
+<label>قیمت نمایشی ۱ (خودرو)<input data-set="p1"></label><label>کارمزد عددی ۱ (تومان)<input data-set="f1" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۲ (موتور)<input data-set="p2"></label><label>کارمزد عددی ۲<input data-set="f2" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۳ (سخا)<input data-set="p3"></label><label>کارمزد عددی ۳<input data-set="f3" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۴ (خلافی)<input data-set="p4"></label><label>کارمزد عددی ۴<input data-set="f4" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۵ (مالیات)<input data-set="p5"></label><label>کارمزد عددی ۵<input data-set="f5" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۶ (شهرداری)<input data-set="p6"></label><label>کارمزد عددی ۶<input data-set="f6" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۷ (آزادراهی)<input data-set="p7"></label><label>کارمزد عددی ۷<input data-set="f7" dir="ltr" inputmode="numeric"></label>
+<label>قیمت نمایشی ۸ (بسته کامل)<input data-set="p8"></label><label>کارمزد عددی ۸<input data-set="f8" dir="ltr" inputmode="numeric"></label>
+</div>
+<div class="note-box" style="margin:12px 18px">👁️ <b>نمایش / حذف بخش‌ها:</b> هر بخش را می‌توانی کامل مخفی (حذف) یا نمایش بدهی.</div>
+<div class="set-grid">
+<label>بخش خدمات<select data-set="show_services"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش استعلام<select data-set="show_free"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش سبد و ثبت<select data-set="show_order"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش پرینت<select data-set="show_print"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش وضعیت<select data-set="show_status"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش پیگیری<select data-set="show_track"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش چت<select data-set="show_chat"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بخش پشتیبانی<select data-set="show_support"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>آمارها<select data-set="show_stats"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+<label>بنر متحرک<select data-set="show_banner"><option value="1">✅ نمایش</option><option value="0">❌ حذف / مخفی</option></select></label>
+</div>
+<div class="note-box" style="margin:12px 18px">🧾 <b>مبلغ‌های بدهی استعلام (عوارض):</b> عدد پایه هر عوارض را عوض کن؛ همان لحظه روی استعلام بعدی اعمال می‌شود. تیک نمایش هر ردیف هم دست توست.</div>
+<div class="set-grid">
+<label>پایه خلافی (تومان)<input data-set="debtKhalafi" dir="ltr" inputmode="numeric"></label>
+<label>نمایش خلافی<select data-set="show_d1"><option value="1">✅ نمایش</option><option value="0">❌ حذف</option></select></label>
+<label>پایه مالیات (تومان)<input data-set="debtMaliat" dir="ltr" inputmode="numeric"></label>
+<label>نمایش مالیات<select data-set="show_d2"><option value="1">✅ نمایش</option><option value="0">❌ حذف</option></select></label>
+<label>پایه شهرداری (تومان)<input data-set="debtShahrdari" dir="ltr" inputmode="numeric"></label>
+<label>نمایش شهرداری<select data-set="show_d3"><option value="1">✅ نمایش</option><option value="0">❌ حذف</option></select></label>
+<label>پایه آزادراهی (تومان)<input data-set="debtAzad" dir="ltr" inputmode="numeric"></label>
+<label>نمایش آزادراهی<select data-set="show_d4"><option value="1">✅ نمایش</option><option value="0">❌ حذف</option></select></label>
+</div>
+<div class="note-box" style="margin:12px 18px">🏷️ <b>تیتر دسته‌ها:</b></div>
+<div class="set-grid">
+<label>تیتر دسته تعویض پلاک<input data-set="cat1t"></label><label>توضیح دسته تعویض پلاک<input data-set="cat1d"></label>
+<label>تیتر دسته عوارض<input data-set="cat2t"></label><label>توضیح دسته عوارض<input data-set="cat2d"></label>
+<label>تیتر دسته سخا<input data-set="cat3t"></label><label>توضیح دسته سخا<input data-set="cat3d"></label>
+</div>
+<div class="note-box" style="margin:12px 18px">🛠️ <b>مدیریت کارت‌های خدمت (ویرایش / حذف / افزودن):</b> عنوان، توضیح، قیمت نمایشی، کارمزد واقعی، آیکون و دسته هر کارت را عوض کن یا حذفش کن. کارمزد واقعی همان مبلغی است که جمع می‌شود و مشتری بعد از کد پرداخت می‌کند.</div>
+<div id="svcAdmin"></div>
+<div style="padding:0 18px 20px"><div class="set-grid" style="padding:0">
+<label>عنوان خدمت جدید<input id="newSvcT" placeholder="مثال: المثنی برگ سبز"></label>
+<label>توضیح<input id="newSvcD" placeholder="توضیح کوتاه"></label>
+<label>قیمت نمایشی<input id="newSvcP" placeholder="از ۶۰ هزار تومان"></label>
+<label>کارمزد واقعی (تومان)<input id="newSvcF" dir="ltr" inputmode="numeric" placeholder="60000"></label>
+<label>آیکون (ایموجی)<input id="newSvcI" placeholder="🧾"></label>
+<label>دسته<select id="newSvcC"><option value="pelak">🚗 تعویض پلاک</option><option value="avarez">🧾 عوارض</option><option value="sakha">🪪 سخا</option></select></label>
+</div><button class="abtn" id="addSvcBtn" style="background:#22c55e;color:#fff;margin-top:8px">➕ افزودن کارت جدید</button></div>
+</div>
+<div id="tab-pay" style="display:none"><div class="set-grid">
+<label>شماره کارت (جدا با فاصله)<input data-set="card" dir="ltr"></label><label>شماره شبا<input data-set="sheba" dir="ltr"></label>
+<label>نام بانک / صاحب حساب<input data-set="bankName"></label><label>لینک پرداخت (بعدا اضافه کن)<input data-set="paylink" dir="ltr" placeholder="https://..."></label>
+<label>یادداشت پرداخت<textarea data-set="payNote" rows="2"></textarea></label><label>یادداشت پرینت (۳۵ هزار تومان...)<textarea data-set="printNote" rows="3"></textarea></label>
+<label>متن راهنمای بعد از پرداخت (زیر کارت)<textarea data-set="paySteps" rows="4"></textarea></label><label>کدهای تخفیف (هر خط: CODE=درصد)<textarea data-set="discount" rows="4" dir="ltr" placeholder="GHOLAMI20=20"></textarea></label><label>رمز مدیریت جدید<input data-set="adminpass" dir="ltr"></label><label>قیمت پرینت A4 (تومان)<input data-set="printA4" dir="ltr" inputmode="numeric"></label><label>قیمت پرینت A5 (تومان)<input data-set="printA5" dir="ltr" inputmode="numeric"></label>
+</div></div>
+<div id="tab-live" style="display:none"><div class="set-grid">
+<label>خلافی<select data-set="st_khalafi"><option value="on">🟢 فعال / وصل</option><option value="issue">🟠 اختلال موقت</option><option value="off">🔴 غیرفعال</option></select></label>
+<label>مالیات<select data-set="st_maliat"><option value="on">🟢 فعال / وصل</option><option value="issue">🟠 اختلال موقت</option><option value="off">🔴 غیرفعال</option></select></label>
+<label>شهرداری<select data-set="st_shahrdari"><option value="on">🟢 فعال / وصل</option><option value="issue">🟠 اختلال موقت</option><option value="off">🔴 غیرفعال</option></select></label>
+<label>آزادراهی<select data-set="st_azad"><option value="on">🟢 فعال / وصل</option><option value="issue">🟠 اختلال موقت</option><option value="off">🔴 غیرفعال</option></select></label>
+<label>رزرو نوبت<select data-set="st_nobat"><option value="on">🟢 فعال / وصل</option><option value="issue">🟠 اختلال موقت</option><option value="off">🔴 غیرفعال</option></select></label>
+<label>سخا<select data-set="st_sakha"><option value="on">🟢 فعال / وصل</option><option value="issue">🟠 اختلال موقت</option><option value="off">🔴 غیرفعال</option></select></label>
+<label>یادداشت رزرو نوبت<textarea data-set="reserveNote" rows="3"></textarea></label><label>توضیح وضعیت<textarea data-set="statusSub" rows="2"></textarea></label>
+</div></div>
+<div id="tab-texts" style="display:none"><div class="set-grid">
+<label>تم سایت<select data-set="theme"><option value="adi">🌙 عادی (سرمه‌ای)</option><option value="jashn">🎉 جشن (طلایی-صورتی)</option><option value="shahadat">🖤 شهادت (مشکی-قرمز)</option></select></label>
+<label>رنگ اصلی<input type="color" data-set="c1"></label>
+<label>رنگ دوم<input type="color" data-set="c2"></label>
+<label>تیتر ورود (گیت)<input data-set="gateTitle"></label><label>توضیح ورود<textarea data-set="gateSub" rows="2"></textarea></label>
+<label>متن جوایز باگ<textarea data-set="bugText" rows="3"></textarea></label><label>توضیح پرینت کوتاه<textarea data-set="printSub" rows="2"></textarea></label>
+</div>
+<div style="padding:0 18px 30px;display:flex;gap:8px;flex-wrap:wrap"><button class="abtn" id="exportBtn" style="background:#22c55e;color:#fff">⬇️ خروجی تنظیمات</button><button class="abtn" id="resetSettings" style="background:#fee2e2;color:#991b1b">بازنشانی همه</button></div>
+</div>
+</div>
+<script>
+var RUBIKA="Mm1214__Mm1214", PHONE="09019791215";
+var OKEY="gholami_orders_v4", SKEY="gholami_settings_v4", UKEY="gholami_user_v4", IKEY="gholami_inq_v4", PKEY="gholami_prints_v4", AKEY="gholami_users_v4_all", SVCKEY="gholami_svcs_v5";
+var DEF={name:"کافی‌نت تعویض پلاک تربت جام (غلامی)",sub:"استعلام • سبد چندتایی • پرینت • پیگیری • سراسری",heroTitle:"تعویض پلاک تربت جام، بدون صف و بدون استرس",heroTitle2:"استعلام، سبد، پرینت و پیگیری یک‌جا",heroLead:"",badge:"آنلاین هستیم — استعلام اول رایگان است",banner:"🔍 استعلام اول رایگان است ★ بدون تسویه عوارض، نوبت می‌سوزد ★ نوبت تعویض پلاک فقط رزرو می‌کنیم (حضوری طبق قانون) ★ رسیدت را از چت داخل سایت با عکس بفرست ★",trust1:"رسید رسمی",trust2:"محرمانگی مدارک",trust3:"پاسخ سریع",hours:"شنبه تا پنجشنبه ۸ تا ۲۱ • جمعه ۱۰ تا ۱۸",phone:PHONE,rubika:RUBIKA,p1:"از ۱۵۰ هزار تومان",p2:"از ۱۵۰ هزار تومان",p3:"از ۸۰ هزار تومان",p4:"از ۵۰ هزار تومان",p5:"از ۱۲۰ هزار تومان",p6:"از ۸۰ هزار تومان",p7:"از ۵۰ هزار تومان",p8:"۳۵۰ هزار تومان",f1:"150000",f2:"150000",f3:"80000",f4:"50000",f5:"120000",f6:"80000",f7:"50000",f8:"350000",card:"6219 8614 7855 7993",sheba:"IR660560611828005490053702",bankName:"🏦 بلو‌بانک — به‌نام کافی‌نت غلامی",paylink:"",payNote:"لینک پرداخت به‌زودی فعال می‌شود؛ فعلا با کارت واریز کن و رسید را از چت بفرست.",printSub:"عکس مدرک یا رسید را انتخاب کن، بچرخان و برش بزن، بعد با کیفیت بالا دانلود یا چاپ کن.",printNote:"مخصوص تعویض پلاک",discount:"GHOLAMI20=20",printA4:"8000",printA5:"4000",adminpass:"",theme:"adi",c1:"#f97316",c2:"#7c3aed",gateTitle:"👋 خوش اومدی! اول خودت را معرفی کن",gateSub:"",bugText:"سایت تازه درست شده",statusSub:"",reserveNote:"",st_khalafi:"on",st_maliat:"on",st_shahrdari:"on",st_azad:"on",st_nobat:"on",st_sakha:"on",cat1t:"تعویض پلاک — رزرو نوبت",cat1d:"نوبت خودرو و موتور + راهنمای حضوری. بدون تسویه عوارض، نوبت می‌سوزد.",cat2t:"عوارض و تسویه — بدهی‌ها",cat2d:"خلافی، مالیات، شهرداری، آزادراهی + بسته کامل. مبلغ‌ها را مدیر تعیین می‌کند.",cat3t:"سخا و مدارک",cat3d:"ثبت‌نام سخا، احراز نشانی و خدمات مدارکی.",show_services:"1",show_free:"1",show_order:"1",show_print:"1",show_status:"1",show_track:"1",show_chat:"1",show_support:"1",show_stats:"1",show_banner:"1",debtKhalafi:"200000",debtMaliat:"800000",debtShahrdari:"150000",debtAzad:"50000",show_d1:"1",show_d2:"1",show_d3:"1",show_d4:"1",paySteps:"۱️⃣ مبلغ کارمزد بالا را به کارت واریز کن (کپی با یک لمس).\n۲️⃣ رسید را در بخش «💬 چت با کارشناس» با کد پیگیری بفرست (متن + عکس).\n۳️⃣ بعد از تایید پرداخت توسط ما، کارت پیش می‌رود و وضعیت به «تایید مدیریت» تغییر می‌کند."};
+var SVCS=[{id:"s1",t:"نوبت تعویض پلاک خودرو",d:"رزرو نوبت + راهنمای کامل مراجعه حضوری.",i:"🚗",pk:"p1",fk:"f1",cat:"pelak"},{id:"s2",t:"نوبت تعویض پلاک موتور",d:"رزرو نوبت موتور + خلافی و المثنی.",i:"🏍️",pk:"p2",fk:"f2",cat:"pelak"},{id:"s3",t:"ثبت‌نام سخا",d:"ثبت‌نام، احراز نشانی و ویرایش آدرس.",i:"🪪",pk:"p3",fk:"f3",cat:"sakha"},{id:"s4",t:"استعلام و تسویه خلافی",d:"ریز تخلفات + تسویه آنی برای تعویض پلاک.",i:"🧾",pk:"p4",fk:"f4",cat:"avarez"},{id:"s5",t:"مالیات نقل‌وانتقال",d:"محاسبه و پرداخت + مفاصاحساب.",i:"🏛️",pk:"p5",fk:"f5",cat:"avarez"},{id:"s6",t:"عوارض شهرداری",d:"سالیانه و معوقه + مفاصاحساب.",i:"🏙️",pk:"p6",fk:"f6",cat:"avarez"},{id:"s7",t:"عوارض آزادراهی",d:"استعلام آنی‌رو با پلاک + پرداخت تجمیعی.",i:"🛣️",pk:"p7",fk:"f7",cat:"avarez"},{id:"s8",t:"بسته کامل اجباری",d:"خلافی + مالیات + شهرداری + آزادراهی + سخا + رزرو نوبت.",i:"💎",pk:"p8",fk:"f8",vip:1,cat:"avarez"}];
+function getSvcs(){try{var a=JSON.parse(localStorage.getItem(SVCKEY)||"null");if(Array.isArray(a)&&a.length)return a}catch(e){}return SVCS.slice()}
+function saveSvcs(a){try{localStorage.setItem(SVCKEY,JSON.stringify(a))}catch(e){}}
+function svcFee(v,s){if(v.fee!=null&&v.fee!=="")return +v.fee;if(v.fk&&s[v.fk]!=null&&s[v.fk]!=="")return +(s[v.fk]||0);return 0}
+function svcPrice(v,s){if(v.price)return v.price;if(v.pk&&s[v.pk])return s[v.pk];return ""}
+function $(id){return document.getElementById(id)}
+function toast(m){var t=$("toast");t.textContent=m;t.style.display="block";clearTimeout(t._h);t._h=setTimeout(function(){t.style.display="none"},2600)}
+function copyTxt(t){if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t).then(function(){toast("📋 کپی شد!")},function(){fallbackCopy(t)})}else fallbackCopy(t)}
+function fallbackCopy(t){var ta=document.createElement("textarea");ta.value=t;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");toast("📋 کپی شد!")}catch(e){toast("کپی نشد، دستی بنویس")}document.body.removeChild(ta)}
+function fmt(n){return (+n).toLocaleString("fa-IR")+" تومان"}
+function loadS(){try{return Object.assign({},DEF,JSON.parse(localStorage.getItem(SKEY)||"{}"))}catch(e){return Object.assign({},DEF)}}
+function saveS(s){try{localStorage.setItem(SKEY,JSON.stringify(s))}catch(e){}}
+function S(k){return loadS()[k]}
+function adminPass(){return S("adminpass")||"Plmplmplm1214$$"}
+function loadO(){try{return JSON.parse(localStorage.getItem(OKEY)||"[]")}catch(e){return[]}}
+function saveO(a){try{localStorage.setItem(OKEY,JSON.stringify(a))}catch(e){toast("⚠️ حافظه پر شد؛ عکس‌ها را کمتر بفرست")}}
+function loadI(){try{return JSON.parse(localStorage.getItem(IKEY)||"[]")}catch(e){return[]}}
+function saveI(a){try{localStorage.setItem(IKEY,JSON.stringify(a))}catch(e){}}
+function loadU(){try{return JSON.parse(localStorage.getItem(UKEY)||"null")}catch(e){return null}}
+function saveU(u){try{localStorage.setItem(UKEY,JSON.stringify(u))}catch(e){}}
+function loadAll(){try{var a=JSON.parse(localStorage.getItem(AKEY)||"[]");if(!Array.isArray(a))return[];return a}catch(e){return[]}}
+function saveAll(a){try{localStorage.setItem(AKEY,JSON.stringify(a))}catch(e){}}
+function loadP(){try{var a=JSON.parse(localStorage.getItem(PKEY)||"[]");if(!Array.isArray(a))return[];return a}catch(e){return[]}}
+function saveP(a){try{localStorage.setItem(PKEY,JSON.stringify(a))}catch(e){toast("⚠️ حافظه پر شد؛ عکس پرینت بزرگ است")}}
+function validCode(c){return /^\d{10}$/.test(c)&&!/^(\d)\1{9}$/.test(c)}
+function validPhone(p){return /^09\d{9}$/.test((p||"").replace(/[\s-]/g,""))}
+/* gate: register once + login with national code */
+function migrateOldUser(){try{var u=loadU();var all=loadAll();if(u&&u.code&&!all.filter(function(x){return x.code===u.code})[0]){all.push(u);saveAll(all)}}catch(e){}}
+function fillUser(u){if(!u)return;if($("oName")&&!$("oName").value)$("oName").value=u.name||"";if($("oPhone")&&!$("oPhone").value)$("oPhone").value=u.phone||"";if($("printName")&&!$("printName").value)$("printName").value=u.name||"";if($("printPhone")&&!$("printPhone").value)$("printPhone").value=u.phone||""}
+function checkGate(){migrateOldUser();var u=loadU();if(u&&u.code){fillUser(u);return}
+var all=loadAll();$("gateModal").classList.add("open");
+if(all.length){showGateTab("login")}else{showGateTab("reg")}
+var h=$("lastUserHint");if(h){if(all.length){var last=all[all.length-1];h.textContent="💡 آخرین ورود: "+(last.name||"")+" • "+(last.code||"")}else{h.textContent=""}}}
+function showGateTab(w){var l=w==="login";$("gateLoginDiv").style.display=l?"block":"none";$("gateRegDiv").style.display=l?"none":"block";$("gtLogin").classList.toggle("on",l);$("gtReg").classList.toggle("on",!l);$("gateMsg").textContent=""}
+$("gtLogin").onclick=function(){showGateTab("login")};
+$("gtReg").onclick=function(){showGateTab("reg")};
+$("loginGo").onclick=function(){var c=$("lCode").value.trim();var m=$("gateMsg");
+if(!validCode(c)){m.textContent="❌ کد ملی باید دقیق ۱۰ رقم باشد";return}
+migrateOldUser();var all=loadAll();var f=null;for(var i=0;i<all.length;i++)if(all[i].code===c){f=all[i];break}
+if(!f){m.innerHTML="❌ با این کد ملی ثبت‌نامی پیدا نشد. از تب «📝 ثبت‌نام اول» ثبت‌نام کن.";showGateTabHint();return}
+m.textContent="⏳ در حال بررسی...";$("loginGo").disabled=true;
+setTimeout(function(){$("loginGo").disabled=false;m.innerHTML="✅ <b>تایید شد!</b> خوش برگشتی "+f.name;m.style.color="#166534";saveU(f);fillUser(f);setTimeout(function(){$("gateModal").classList.remove("open");toast("🎉 خوش برگشتی "+f.name+"!")},900)},1200)};
+function showGateTabHint(){}
+$("gateGo").onclick=function(){var n=$("gName").value.trim(),c=$("gCode").value.trim(),p=$("gPhone").value.trim().replace(/[\s-]/g,"");var m=$("gateMsg");
+if(n.length<3){m.textContent="❌ اسم و فامیل را کامل بنویس";return}
+if(!validCode(c)){m.textContent="❌ کد ملی باید دقیق ۱۰ رقم باشد";return}
+if(!validPhone(p)){m.textContent="❌ شماره تماس باید ۱۱ رقم و با 09 شروع شود";return}
+migrateOldUser();var all=loadAll();
+for(var i=0;i<all.length;i++)if(all[i].code===c){m.innerHTML="⚠️ با این کد ملی قبلا ثبت‌نام شده. از تب «🔑 ورود» فقط با کد ملی وارد شو.";return}
+m.textContent="⏳ در حال بررسی...";$("gateGo").disabled=true;
+setTimeout(function(){$("gateGo").disabled=false;var u={name:n,code:c,phone:p};all.push(u);saveAll(all);saveU(u);m.innerHTML="✅ <b>تایید شد!</b> خوش اومدی "+n;m.style.color="#166534";fillUser(u);setTimeout(function(){$("gateModal").classList.remove("open");toast("🎉 ثبت‌نام و ورود تایید شد!")},900)},1800)};
+/* services grid - grouped like vslshop but better */
+var CURCAT="all";
+function svcCard(v,s){var a=document.createElement("article");a.className="card3d reveal vis"+(v.vip?" vip":"");a.setAttribute("data-cat",v.cat||"avarez");a.innerHTML=(v.vip?'<div class="vip-tag">✦ پیشنهاد ویژه ✦</div>':"")+'<div class="icon3d">'+(v.i||"🧾")+'</div><h3>'+v.t+'</h3><p>'+(v.d||"")+'</p><div class="cf"><b>'+svcPrice(v,s)+'</b></div><label class="chkrow"><input type="checkbox" data-svc="'+v.id+'"> انتخاب برای سبد</label>';return a}
+function renderServices(){var s=loadS();var all=getSvcs();var gp=$("gridPelak"),ga=$("gridAvarez"),gs=$("gridSakha");if(gp)gp.innerHTML="";if(ga)ga.innerHTML="";if(gs)gs.innerHTML="";var cP=0,cA=0,cS=0;all.forEach(function(v){if(v.hidden)return;var card=svcCard(v,s);var c=v.cat||"avarez";if(c==="pelak"){if(gp)gp.appendChild(card);cP++}else if(c==="sakha"){if(gs)gs.appendChild(card);cS++}else{if(ga)ga.appendChild(card);cA++}});var e1=$("cntPelak");if(e1)e1.textContent=cP+" خدمت";var e2=$("cntAvarez");if(e2)e2.textContent=cA+" خدمت";var e3=$("cntSakha");if(e3)e3.textContent=cS+" خدمت";applyCatFilter();renderSvcAdmin()}
+function applyCatFilter(){document.querySelectorAll(".cat-block").forEach(function(b){var cat=b.getAttribute("data-block");b.style.display=(CURCAT==="all"||CURCAT===cat)?"block":"none"});var q=$("search")?$("search").value.trim():"";if(q)document.querySelectorAll("#services .card3d").forEach(function(c){c.style.display=c.textContent.indexOf(q)>-1?"":"none"})}
+document.querySelectorAll(".pill").forEach(function(b){b.onclick=function(){document.querySelectorAll(".pill").forEach(function(x){x.classList.remove("on")});b.classList.add("on");CURCAT=b.getAttribute("data-cat");applyCatFilter()}});
+$("search").addEventListener("input",function(e){applyCatFilter()});
+/* service admin: edit / delete / add */
+function renderSvcAdmin(){var box=$("svcAdmin");if(!box)return;var all=getSvcs();var s=loadS();var h="";all.forEach(function(v,idx){h+='<div class="svc-adm"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><b>'+(idx+1)+'. '+(v.i||"")+' '+(v.t||"")+'</b><span><button class="abtn" style="background:transparent;border:1px solid #ef4444;color:#fca5a5" onclick="delSvc('+idx+')">حذف کارت ✖</button></span></div><div class="row3"><label>عنوان<input value="'+String(v.t||"").replace(/"/g,"&quot;")+'" oninput="editSvc('+idx+',\'t\',this.value)"></label><label>آیکون<input value="'+(v.i||"")+'" oninput="editSvc('+idx+',\'i\',this.value)"></label><label>دسته<select onchange="editSvc('+idx+',\'cat\',this.value)"><option value="pelak"'+(v.cat==="pelak"?" selected":"")+'>🚗 تعویض پلاک</option><option value="avarez"'+(v.cat==="avarez"?" selected":"")+'>🧾 عوارض</option><option value="sakha"'+(v.cat==="sakha"?" selected":"")+'>🪪 سخا</option></select></label></div><label>توضیح<input value="'+String(v.d||"").replace(/"/g,"&quot;")+'" oninput="editSvc('+idx+',\'d\',this.value)"></label><div class="row3"><label>قیمت نمایشی<input value="'+String(v.price||s[v.pk]||"").replace(/"/g,"&quot;")+'" oninput="editSvc('+idx+',\'price\',this.value)"></label><label>کارمزد واقعی (تومان، جمع سبد)<input dir="ltr" inputmode="numeric" value="'+svcFee(v,s)+'" oninput="editSvc('+idx+',\'fee\',this.value)"></label><label>نمایش<select onchange="editSvc('+idx+',\'hidden\',this.value)"><option value=""'+(!v.hidden?" selected":"")+'>✅ نمایش</option><option value="1"'+(v.hidden?" selected":"")+'>❌ مخفی</option></select></label></div></div>'});box.innerHTML=h||'<p style="padding:0 18px;color:#94a3b8">کارتی نیست.</p>'}
+window.editSvc=function(idx,k,val){var all=getSvcs();if(!all[idx])return;if(k==="fee")all[idx].fee=val.replace(/[^0-9]/g,"");else if(k==="hidden")all[idx].hidden=val?"1":"";else all[idx][k]=val;saveSvcs(all);renderServices()};
+window.delSvc=function(idx){if(!confirm("این کارت خدمت حذف شود؟"))return;var all=getSvcs();all.splice(idx,1);saveSvcs(all);renderServices();toast("🗑️ کارت حذف شد")};
+var CART=[],COUPON=null;
+$("addSelBtn").onclick=function(){var s=loadS();var all=getSvcs();document.querySelectorAll("[data-svc]:checked").forEach(function(ch){var v=all.filter(function(x){return x.id===ch.getAttribute("data-svc")})[0];if(!v)v=SVCS.filter(function(x){return x.id===ch.getAttribute("data-svc")})[0];if(!v)return;if(!CART.filter(function(c){return c.id===v.id})[0])CART.push({id:v.id,title:v.t,fee:svcFee(v,s)});ch.checked=false});renderCart();if(CART.length)toast("🧺 به سبد اضافه شد!")};
+function renderCart(){var s=loadS();var box=$("cartList");if(!CART.length){box.innerHTML='<p style="color:#94a3b8;font-size:13px">سبد خالی است — از بخش خدمات انتخاب کن یا استعلام بزن.</p>';$("cartTotal").style.display="none";return}
+var h="";CART.forEach(function(c,i){h+='<div class="cart-item"><span>• '+c.title+' — '+fmt(c.fee)+'</span><button onclick="rmCart('+i+')">حذف ✖</button></div>'});box.innerHTML=h;
+var sum=CART.reduce(function(a,c){return a+c.fee},0);var off=0;if(COUPON){off=Math.round(sum*COUPON.pct/100)}
+$("cartTotal").style.display="block";$("cartTotal").innerHTML="جمع کارمزد: "+fmt(sum)+(off?"<br>تخفیف "+COUPON.code+" ("+COUPON.pct+"٪): −"+fmt(off):"")+"<br>💰 قابل پرداخت: "+fmt(sum-off)}
+window.rmCart=function(i){CART.splice(i,1);renderCart()};
+$("couponBtn").onclick=function(){var code=$("couponIn").value.trim().toUpperCase();var raw=(S("discount")||"").split("\n");var f=null;raw.forEach(function(l){var p=l.trim().split("=");if(p.length===2&&p[0].toUpperCase()===code)f={code:p[0],pct:+p[1]}});
+if(f){COUPON=f;$("couponMsg").innerHTML="✅ کد <b>"+f.code+"</b> اعمال شد: "+f.pct+"٪ تخفیف";renderCart()}else{COUPON=null;$("couponMsg").innerHTML="❌ این کد تخفیف معتبر نیست";renderCart()}};
+/* plate tabs */
+var PTYPE="car";
+$("ptCar").onclick=function(){PTYPE="car";$("ptCar").classList.add("on");$("ptMoto").classList.remove("on");$("carPlate").style.display="block";$("motoPlate").style.display="none"};
+$("ptMoto").onclick=function(){PTYPE="moto";$("ptMoto").classList.add("on");$("ptCar").classList.remove("on");$("motoPlate").style.display="block";$("carPlate").style.display="none"};
+function plateStr(){if(PTYPE==="car"){return $("pl2").value+" "+$("plL").value+" "+$("pl3").value+" ایران "+$("plIr").value}else{return "موتور "+$("mo3").value+"-"+$("mo5").value}}
+function hashNum(str){var h=0;for(var i=0;i<str.length;i++)h=(h*31+str.charCodeAt(i))%9973;return h}
+function debtBase(k,fb){var v=+(S(k)||fb);if(!(v>0))v=fb;return v}
+function debtsFor(p){var h=hashNum(p||"x");return{khalafi:debtBase("debtKhalafi",200000)+(h%40)*25000,maliat:debtBase("debtMaliat",800000)+((h*7)%60)*50000,shahrdari:debtBase("debtShahrdari",150000)+((h*13)%30)*20000,azad:debtBase("debtAzad",50000)+((h*3)%20)*15000}}
+var LASTD=null;
+$("freeBtn").onclick=function(){var oc=$("ownerCode").value.trim(),fp=$("freePhone").value.trim().replace(/[\s-]/g,"");
+if(PTYPE==="car"){if($("pl2").value.length<2||$("pl3").value.length<3||$("plIr").value.length<2){toast("❌ ارقام پلاک خودرو را کامل وارد کن");return}}
+else{if($("mo3").value.length<3||$("mo5").value.length<5){toast("❌ ارقام پلاک موتور را کامل وارد کن");return}}
+if(!validCode(oc)){toast("❌ کد ملی مالک (برگ سبز) باید ۱۰ رقم باشد");return}
+if(!validPhone(fp)){toast("❌ موبایل باید ۱۱ رقم با 09 باشد");return}
+var p=plateStr();var d=debtsFor(p+oc);LASTD={plate:p,owner:oc,phone:fp,debts:d,total:d.khalafi+d.maliat+d.shahrdari+d.azad,type:PTYPE};
+$("d1").textContent="دارد ❌ — "+fmt(d.khalafi);$("d2").textContent="دارد ❌ — "+fmt(d.maliat);$("d3").textContent="دارد ❌ — "+fmt(d.shahrdari);$("d4").textContent="دارد ❌ — "+fmt(d.azad);
+$("debtMoney").textContent="پلاک: "+p+" • مالک: "+oc;$("debtTotal").textContent="💰 جمع بدهی‌های دولتی (تخمینی): "+fmt(LASTD.total)+" — کارمزد تسویه را در سبد می‌بینی";
+$("freeRes").style.display="block";applyDebtRows();
+var iq=loadI();iq.unshift({t:new Date().toLocaleString("fa-IR"),plate:p,owner:oc,phone:fp,total:LASTD.total});saveI(iq.slice(0,200));renderInqs();toast("✅ استعلام ثبت شد")};
+$("toOrderBtn").onclick=function(){if(!LASTD)return;$("orderPlate").value=LASTD.plate;if($("oOwner").value==="")$("oOwner").value=LASTD.owner;if($("oPhone").value==="")$("oPhone").value=LASTD.phone;
+[["s4"],["s5"],["s6"],["s7"]].forEach(function(x){if(!CART.filter(function(c){return c.id===x[0]})[0]){var all=getSvcs();var v=all.filter(function(sv){return sv.id===x[0]})[0]||SVCS.filter(function(sv){return sv.id===x[0]})[0];if(!v)return;var s=loadS();CART.push({id:v.id,title:v.t+" ("+LASTD.plate+")",fee:svcFee(v,s)})}});renderCart();document.querySelector("#order").scrollIntoView({behavior:"smooth"});toast("🧺 ۴ عوارض همین پلاک به سبد رفت — مبلغ جمع همان کارمزدی است که مدیر تعیین کرده")};
+$("copyFreeBtn").onclick=function(){if(!LASTD)return;copyTxt("🔍 استعلام "+LASTD.plate+"\nکد ملی مالک: "+LASTD.owner+"\nموبایل: "+LASTD.phone+"\nجمع بدهی: "+LASTD.total.toLocaleString("fa-IR")+" تومان\nاز سایت "+S("name"))};
+/* order submit */
+function mkCode(){return "PSH-"+Math.floor(1000+Math.random()*9000)}
+$("orderForm").addEventListener("submit",function(e){e.preventDefault();
+var nm=$("oName").value.trim(),ph=$("oPhone").value.trim().replace(/[\s-]/g,""),ow=$("oOwner").value.trim();
+if(nm.length<3){toast("❌ نام را کامل بنویس");return}
+if(!validPhone(ph)){toast("❌ موبایل باید ۱۱ رقم با 09 باشد");return}
+if(!validCode(ow)){toast("❌ کد ملی مالک باید ۱۰ رقم باشد");return}
+if(!CART.length){toast("❌ سبد خالی است؛ اول خدمت انتخاب کن");return}
+var sum=CART.reduce(function(a,c){return a+c.fee},0);var off=COUPON?Math.round(sum*COUPON.pct/100):0;
+var code=mkCode();var o={code:code,name:nm,phone:ph,owner:ow,plate:$("orderPlate").value,desc:e.target.desc.value,items:CART.slice(),sum:sum,off:off,total:sum-off,coupon:COUPON?COUPON.code:"",debts:LASTD,st:"pending",chat:[{who:"sys",text:"🧾 سفارش ثبت شد. رسیدها و مدارک را همین‌جا با عکس بفرست."}],t:new Date().toLocaleString("fa-IR")};
+var a=loadO();a.unshift(o);saveO(a);
+$("orderResult").innerHTML='<div class="success">🎉 ثبت شد! حالا فقط پرداخت مانده.<div class="code-big" id="newCode">'+code+'</div><div class="row-btns"><button class="btn btn-d" onclick="copyTxt(\''+code+'\')">📋 کپی کد پیگیری</button><button class="btn btn-r" onclick="copyPay(\''+code+'\')">📋 کپی فاکتور برای روبیکا</button></div>'+payBoxHTML(o)+'<div class="pay-text">'+payText(o)+'</div></div>';
+CART=[];COUPON=null;$("couponIn").value="";$("couponMsg").innerHTML="";renderCart();renderOrders();toast("✅ سفارش ثبت شد: "+code)});
+function feeOf(o){return o.total!=null?o.total:(o.sum||0)}
+function payStepsHTML(o){var s=loadS();var steps=(s.paySteps||"").split("\n").filter(function(x){return x.trim()});var h='<div class="pay-steps">';if(!steps.length){h+='<div class="ps"><span class="psn">۱</span><span>مبلغ <b>'+fmt(feeOf(o))+'</b> را به کارت زیر واریز کن (کپی با یک لمس).</span></div><div class="ps"><span class="psn">۲</span><span>رسید را در بخش <b>«💬 چت با کارشناس»</b> با همین کد پیگیری بفرست (متن + عکس).</span></div><div class="ps"><span class="psn">۳</span><span>بعد از تایید پرداخت توسط ما، کارت پیش می‌رود و وضعیت به «تایید مدیریت» تغییر می‌کند.</span></div>'}else{steps.forEach(function(t,i){h+='<div class="ps"><span class="psn">'+(i+1)+'</span><span>'+escH(t)+'</span></div>'})}h+='</div>';return h}
+function payBoxHTML(o,compact){var s=loadS();var h='<div class="pay-card" style="margin-top:10px"><h4 style="margin:0 0 6px">💳 پرداخت کارمزد: '+fmt(feeOf(o))+'</h4><div class="pay-num"><span>'+(s.card||"")+'</span><button onclick="copyCard()">📋 کپی کارت</button></div><div class="pay-num" style="font-size:13px"><span>'+(s.sheba||"")+'</span><button onclick="copySheba()">📋 کپی شبا</button></div>';if(s.paylink)h+='<a class="btn btn-ok w100" href="'+s.paylink+'" target="_blank" style="margin-top:8px">🔗 پرداخت آنلاین</a>';h+='<p style="font-size:12px;color:#166534;background:#ecfdf5;border-radius:10px;padding:8px;margin:8px 0 0">'+(s.bankName||"")+'</p>'+payStepsHTML(o)+'<div class="row-btns"><button class="btn btn-p" style="font-size:12px" onclick="openChatFor(\''+o.code+'\')">💬 ارسال رسید در چت با کارشناس</button><button class="btn btn-r" style="font-size:12px" onclick="copyPay(\''+o.code+'\')">📋 کپی فاکتور</button></div></div>';return h}
+function payText(o){var s=loadS();return "🧾 پیش‌فاکتور رسمی "+s.name+"\n———————————\nکد پیگیری: "+o.code+"\nنام: "+o.name+"\nموبایل: "+o.phone+"\nکد ملی مالک: "+(o.owner||"—")+"\nخدمت‌ها: "+(o.items||[]).map(function(i){return i.title}).join("، ")+"\nپلاک: "+(o.plate||"—")+"\n———————————\nجمع کارمزد (مبلغی که مدیر تعیین کرده): "+fmt(o.sum||0)+(o.off?"\nتخفیف ("+o.coupon+"): −"+fmt(o.off):"")+"\n💰 قابل پرداخت (واریز کن): "+fmt(feeOf(o))+"\n———————————\n💳 کارت: "+s.card+"\n🔢 شبا: "+s.sheba+"\n"+(s.paylink?("🔗 پرداخت آنلاین: "+s.paylink+"\n"):"")+"📌 بعد از واریز، رسید را در بخش «چت با کارشناس» با همین کد بفرست.\n💬 آیدی پی‌وی (سرچ در پیام‌رسان): @"+s.rubika+"\n📞 تلفن: "+s.phone+"\n✅ بعد از تایید پرداخت، کارت پیش می‌رود."}
+window.copyPay=function(code){var a=loadO();for(var i=0;i<a.length;i++)if(a[i].code===code){copyTxt(payText(a[i]));return}};
+window.copyCard=function(){copyTxt(S("card").replace(/\s/g,""))};
+window.copySheba=function(){copyTxt(S("sheba").replace(/\s/g,""))};
+window.copyRubikaId=function(){copyTxt("@"+S("rubika"));toast("📋 آیدی پی‌وی کپی شد! داخل پیام‌رسان روبیکا سرچش کن")};
+window.closePv=function(){$("pvModal").classList.remove("open")};
+/* track + chat */
+function findO(code){var a=loadO();code=(code||"").trim().toUpperCase();for(var i=0;i<a.length;i++)if(a[i].code.toUpperCase()===code)return a[i];return null}
+function stName(s){return{pending:"🕐 در انتظار پرداخت",accepted:"✅ تایید پرداخت / مدیریت",doing:"⏳ در حال انجام",done:"🎉 انجام شد",rejected:"✖ رد شد"}[s]||s}
+function escH(s){return String(s==null?"":s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}
+function statusHTML(o){var steps=["pending","accepted","doing","done"];var h='<div class="success"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><b>'+o.code+'</b><button class="btn btn-d" style="padding:6px 14px;font-size:12px" onclick="copyTxt(\''+o.code+'\')">📋 کپی کد</button></div><div style="margin:6px 0">وضعیت: <b>'+stName(o.st)+'</b></div><div class="steps-line">';
+steps.forEach(function(s2){var on=steps.indexOf(s2)<=steps.indexOf(o.st==="rejected"?"pending":o.st);h+='<div class="stp'+(on?" on":"")+'">'+stName(s2)+"</div>"});h+='</div><div style="font-size:12.5px">💰 قابل پرداخت (کارمزد مدیر): '+fmt(feeOf(o))+'</div>';if(o.st==="pending"){h+='</div>'+payBoxHTML(o)+'<div class="success">'}h+='<div class="row-btns"><a class="btn btn-p" href="#chat" style="font-size:12px">💬 رفتن به چت با کارشناس</a><button class="btn btn-r" style="font-size:12px" onclick="openChatFor(\''+o.code+'\')">باز کردن چت همین سفارش</button></div></div>';return h}
+function trackHTML(o){return statusHTML(o)}
+function chatHTML(o){var h='<div class="success"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><b>💬 '+o.code+'</b><span style="font-size:12px">'+stName(o.st)+'</span></div><div style="font-size:12.5px;margin:6px 0">👤 '+escH(o.name)+' • 🧺 '+((o.items||[]).map(function(i){return i.title}).join("، ")||"—")+'</div><div class="chat-box"><b style="color:#fff;font-size:13px">گفت‌وگو با کارشناس (متن + عکس):</b><div class="chat-msgs" id="chat-'+o.code+'" style="max-height:300px">';
+(o.chat||[]).forEach(function(m){if(m.img)h+='<div class="msg '+(m.who==="me"?"me":"them")+'">'+escH(m.text||"")+'<br><img src="'+m.img+'"></div>';else h+='<div class="msg '+(m.who==="sys"?"sys":(m.who==="me"?"me":"them"))+'">'+escH(m.text)+"</div>"});h+='</div><div class="chat-send"><input id="ci-'+o.code+'" placeholder="پیامت را بنویس..."><button class="btn btn-p" style="padding:10px 16px" onclick="sendChat(\''+o.code+'\')">ارسال</button></div><div style="margin-top:8px"><input type="file" id="fi-'+o.code+'" accept="image/*" onchange="sendImg(\''+o.code+'\')"></div></div></div>';return h}
+window.openChatFor=function(code){var c=$("chatCode");if(c)c.value=code;var o=findO(code);if(o){$("chatResult").innerHTML=chatHTML(o);document.querySelector("#chat").scrollIntoView({behavior:"smooth"})}};
+$("trackBtn").onclick=function(){var o=findO($("trackCode").value);$("trackResult").innerHTML=o?statusHTML(o):'<div class="note-box">❌ کدی با این مشخصات پیدا نشد. کد را دقیق بزن (مثل PSH-4821).</div>'};
+$("heroTrackBtn").onclick=function(){var o=findO($("heroTrack").value);$("heroTrackRes").innerHTML=o?'<div class="success">وضعیت <b>'+o.code+'</b>: '+stName(o.st)+' — <a href="#chat">رفتن به چت با کارشناس</a></div>':'<div class="note-box">❌ پیدا نشد</div>'};
+$("chatBtn").onclick=function(){var o=findO($("chatCode").value);$("chatResult").innerHTML=o?chatHTML(o):'<div class="note-box">❌ کدی با این مشخصات پیدا نشد. کد را دقیق بزن (مثل PSH-4821).</div>'};
+window.sendChat=function(code){var inp=$("ci-"+code);if(!inp||!inp.value.trim())return;var a=loadO();for(var i=0;i<a.length;i++)if(a[i].code===code){a[i].chat=a[i].chat||[];a[i].chat.push({who:"me",text:inp.value.trim()});saveO(a);if($("chatResult"))$("chatResult").innerHTML=chatHTML(a[i]);if($("trackResult")&&$("trackResult").innerHTML.indexOf(code)>-1)$("trackResult").innerHTML=statusHTML(a[i]);renderOrders();return}};
+window.sendImg=function(code){var fi=$("fi-"+code);if(!fi||!fi.files[0])return;var r=new FileReader();r.onload=function(){var img=new Image();img.onload=function(){var mx=900,sc=Math.min(1,mx/Math.max(img.width,img.height));var cv=document.createElement("canvas");cv.width=Math.round(img.width*sc);cv.height=Math.round(img.height*sc);cv.getContext("2d").drawImage(img,0,0,cv.width,cv.height);var url=cv.toDataURL("image/jpeg",.82);var a=loadO();for(var i=0;i<a.length;i++)if(a[i].code===code){a[i].chat=a[i].chat||[];a[i].chat.push({who:"me",text:"📷 رسید/مدرک:",img:url});saveO(a);if($("chatResult"))$("chatResult").innerHTML=chatHTML(a[i]);renderOrders();toast("📷 عکس ارسال شد");return}};img.src=r.result};r.readAsDataURL(fi.files[0])};
+/* print: edit + crop + A4/A5 + send to cafenet */
+var PR={img:null,rot:0,zoom:100,sel:null,drag:null};
+function priceA4(){return +(S("printA4")||8000)||8000}
+function priceA5(){return +(S("printA5")||4000)||4000}
+function printUnit(){return ($("paperSize")&&$("paperSize").value==="A5")?priceA5():priceA4()}
+function printCount(){var n=+($("paperCount")?$("paperCount").value:1);if(!(n>0))n=1;return n}
+function updatePrintTotal(){var t=$("printTotal");if(!t)return;var u=printUnit(),n=printCount();var sz=($("paperSize")&&$("paperSize").value)||"A4";t.textContent="\uD83D\uDCB0 هزینه پرینت ("+sz+" × "+n.toLocaleString("fa-IR")+" برگ): "+fmt(u*n)}
+if($("paperSize"))$("paperSize").onchange=updatePrintTotal;
+if($("paperCount"))$("paperCount").oninput=updatePrintTotal;
+function flattenRot(){if(!PR.img||PR.rot===0)return;var w=PR.img.width,h=PR.img.height;var rad=PR.rot*Math.PI/180;var bb=PR.rot%180===0?[w,h]:[h,w];var cv=document.createElement("canvas");cv.width=bb[0];cv.height=bb[1];var c=cv.getContext("2d");c.fillStyle="#fff";c.fillRect(0,0,cv.width,cv.height);c.save();c.translate(cv.width/2,cv.height/2);c.rotate(rad);c.drawImage(PR.img,-w/2,-h/2);c.restore();var im=new Image();im.src=cv.toDataURL("image/jpeg",.92);PR.img=im;PR.rot=0}
+$("printFile").addEventListener("change",function(e){if(!e.target.files[0])return;var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){PR.img=im;PR.rot=0;PR.zoom=100;PR.sel=null;if($("zoomR"))$("zoomR").value=100;drawPrint()};im.src=r.result};r.readAsDataURL(e.target.files[0])});
+$("rotBtn").onclick=function(){if(!PR.img){toast("❌ اول عکس انتخاب کن");return}PR.rot=(PR.rot+90)%360;PR.sel=null;drawPrint()};
+$("zoomR").oninput=function(e){PR.zoom=+e.target.value;drawPrint()};
+$("cropBtn").onclick=function(){if(!PR.img){toast("❌ اول عکس انتخاب کن");return}flattenRot();var img=PR.img;var s=Math.min(img.width,img.height);var cv=document.createElement("canvas");cv.width=s;cv.height=s;cv.getContext("2d").drawImage(img,(img.width-s)/2,(img.height-s)/2,s,s,0,0,s,s);var im=new Image();im.onload=function(){PR.img=im;PR.rot=0;PR.zoom=100;PR.sel=null;if($("zoomR"))$("zoomR").value=100;drawPrint();toast("✂️ برش مربع وسط انجام شد")};im.src=cv.toDataURL("image/jpeg",.92)};
+function canvasPos(ev){var cv=$("printCanvas");var r=cv.getBoundingClientRect();var cx=(ev.touches&&ev.touches[0])?ev.touches[0].clientX:ev.clientX;var cy=(ev.touches&&ev.touches[0])?ev.touches[0].clientY:ev.clientY;return{x:(cx-r.left)*(cv.width/r.width),y:(cy-r.top)*(cv.height/r.height)}}
+function bindCrop(){var cv=$("printCanvas");if(!cv||cv._bound)return;cv._bound=true;
+cv.addEventListener("mousedown",function(e){if(!PR.img)return;var q=canvasPos(e);PR.drag={x0:q.x,y0:q.y,x1:q.x,y1:q.y};PR.sel=null;drawPrint()});
+cv.addEventListener("mousemove",function(e){if(!PR.drag)return;var q=canvasPos(e);PR.drag.x1=q.x;PR.drag.y1=q.y;PR.sel={x:Math.min(PR.drag.x0,q.x),y:Math.min(PR.drag.y0,q.y),w:Math.abs(q.x-PR.drag.x0),h:Math.abs(q.y-PR.drag.y0)};drawPrint()});
+window.addEventListener("mouseup",function(){PR.drag=null});
+cv.addEventListener("touchstart",function(e){if(!PR.img)return;e.preventDefault();var q=canvasPos(e);PR.drag={x0:q.x,y0:q.y,x1:q.x,y1:q.y};PR.sel=null;drawPrint()},{passive:false});
+cv.addEventListener("touchmove",function(e){if(!PR.drag)return;e.preventDefault();var q=canvasPos(e);PR.drag.x1=q.x;PR.drag.y1=q.y;PR.sel={x:Math.min(PR.drag.x0,q.x),y:Math.min(PR.drag.y0,q.y),w:Math.abs(q.x-PR.drag.x0),h:Math.abs(q.y-PR.drag.y0)};drawPrint()},{passive:false});
+cv.addEventListener("touchend",function(){PR.drag=null})}
+function drawPrint(){if(!PR.img)return;bindCrop();var cv=$("printCanvas");var rad=PR.rot*Math.PI/180;var w=PR.img.width,h=PR.img.height;var bb=PR.rot%180===0?[w,h]:[h,w];var z=PR.zoom/100;cv.width=Math.min(1600,Math.round(bb[0]*z));var sc=cv.width/bb[0];cv.height=Math.round(bb[1]*sc);var c=cv.getContext("2d");c.fillStyle="#fff";c.fillRect(0,0,cv.width,cv.height);c.save();c.translate(cv.width/2,cv.height/2);c.rotate(rad);c.scale(sc,sc);c.drawImage(PR.img,-w/2,-h/2);c.restore();
+var s2=PR.sel||PR.drag;if(s2){var sx=s2.x!=null?s2.x:Math.min(s2.x0,s2.x1),sy=s2.y!=null?s2.y:Math.min(s2.y0,s2.y1);var sw=s2.w!=null?s2.w:Math.abs(s2.x1-s2.x0),sh=s2.h!=null?s2.h:Math.abs(s2.y1-s2.y0);c.save();c.strokeStyle="#ef4444";c.lineWidth=3;c.setLineDash([10,6]);c.strokeRect(sx,sy,sw,sh);c.fillStyle="rgba(239,68,68,.12)";c.fillRect(sx,sy,sw,sh);c.restore()}$("printImg").src=cv.toDataURL("image/jpeg",.92)}
+$("cropSelBtn").onclick=function(){if(!PR.img){toast("❌ اول عکس انتخاب کن");return}if(PR.rot!==0){toast("⚠️ اول چرخش را با همان دکمه ثابت کن بعد برش بزن");flattenRot()}
+var s2=PR.sel;if(!s2||s2.w<20||s2.h<20){toast("❌ اول روی عکس بکش تا کادر قرمز انتخاب شود");return}
+var cv=$("printCanvas");var sc=cv.width/PR.img.width;var sx=Math.round(s2.x/sc),sy=Math.round(s2.y/sc),sw=Math.round(s2.w/sc),sh=Math.round(s2.h/sc);
+sx=Math.max(0,sx);sy=Math.max(0,sy);sw=Math.min(PR.img.width-sx,sw);sh=Math.min(PR.img.height-sy,sh);if(sw<20||sh<20){toast("❌ انتخاب خیلی کوچک است");return}
+var nc=document.createElement("canvas");nc.width=sw;nc.height=sh;nc.getContext("2d").drawImage(PR.img,sx,sy,sw,sh,0,0,sw,sh);var im=new Image();im.onload=function(){PR.img=im;PR.rot=0;PR.zoom=100;PR.sel=null;if($("zoomR"))$("zoomR").value=100;drawPrint();toast("✂️ برش انتخابی انجام شد — دست و حاشیه حذف شد")};im.src=nc.toDataURL("image/jpeg",.92)};
+$("dlBtn").onclick=function(){if(!PR.img){toast("❌ اول عکس انتخاب کن");return}var a=document.createElement("a");a.download="print-gholami.jpg";a.href=$("printCanvas").toDataURL("image/jpeg",.95);a.click();toast("⬇️ دانلود با کیفیت بالا انجام شد")};
+$("doPrintBtn").onclick=function(){if(!PR.img){toast("❌ اول عکس انتخاب کن");return}$("printArea").style.display="flex";document.body.classList.add("printing");window.print();setTimeout(function(){document.body.classList.remove("printing");$("printArea").style.display="none"},500)};
+function mkPrintCode(){return "PRT-"+Math.floor(1000+Math.random()*9000)}
+$("sendPrintBtn").onclick=function(){if(!PR.img){toast("❌ اول عکس انتخاب کن");return}
+var nm=($("printName")&&$("printName").value.trim())||(loadU()&&loadU().name)||"";var ph=(($("printPhone")&&$("printPhone").value.trim())||(loadU()&&loadU().phone)||"").replace(/[\s-]/g,"");
+if(nm.length<3){toast("❌ نام را بنویس");return}if(!validPhone(ph)){toast("❌ موبایل باید ۱۱ رقم با 09 باشد");return}
+var u=printUnit(),n=printCount(),total=u*n,sz=(($("paperSize")&&$("paperSize").value)||"A4");
+var url=$("printCanvas").toDataURL("image/jpeg",.85);
+var code=mkPrintCode();var jobs=loadP();jobs.unshift({code:code,name:nm,phone:ph,paper:sz,count:n,total:total,img:url,st:"pending",t:new Date().toLocaleString("fa-IR")});saveP(jobs.slice(0,200));
+$("printSendResult").innerHTML='<div class="success">🎉 به کافی‌نت ارسال شد!<div class="code-big">'+code+'</div><div style="font-size:13px">📄 '+sz+' × '+n+' برگ — 💰 '+fmt(total)+'<br>از بخش <a href="#chat"><b>چت با کارشناس</b></a> هم می‌توانی پیگیری کنی.</div><div class="row-btns"><button class="btn btn-d" onclick="copyTxt(\''+code+'\')">📋 کپی کد پرینت</button></div></div>';
+renderPrints();toast("📤 پرینت ارسال شد: "+code)};
+/* live status */
+function renderLive(){var s=loadS();var items=[["khalafi","🧾 خلافی"],["maliat","🏛️ مالیات نقل‌وانتقال"],["shahrdari","🏙️ عوارض شهرداری"],["azad","🛣️ عوارض آزادراهی"],["nobat","📅 رزرو نوبت تعویض پلاک"],["sakha","🪪 سخا"]];var g=$("liveGrid");g.innerHTML="";items.forEach(function(x){var v=s["st_"+x[0]]||"on";var t=v==="on"?["on","🟢 فعال / وصل"]:v==="off"?["off","🔴 غیرفعال"]:["issue","🟠 اختلال موقت"];var d=document.createElement("div");d.className="live";d.innerHTML='<span class="dot '+t[0]+'"></span><div><b>'+x[1]+'</b><small>'+t[1]+'</small></div>';g.appendChild(d)})}
+/* admin */
+document.querySelectorAll(".tab").forEach(function(t){t.onclick=function(){document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on")});t.classList.add("on");["orders","inqs","prints","site","pay","live","texts"].forEach(function(k){$("tab-"+k).style.display=(k===t.getAttribute("data-tab"))?"block":"none"})}});
+function renderOrders(){var a=loadO();var box=$("tab-orders");$("admCount").textContent=a.length+" سفارش ثبت شده";if(!a.length){box.innerHTML='<p style="padding:18px;color:#94a3b8">هنوز سفارشی ثبت نشده.</p>';return}
+var h="";a.forEach(function(o){h+='<div class="ord'+(o.st==="pending"?" new":"")+'"><div class="ord-head"><span class="code-chip">'+o.code+'</span><span class="st-chip st-'+o.st+'">'+stName(o.st)+'</span></div><div style="font-size:13px;margin-top:8px">👤 '+o.name+' • <bdi>'+o.phone+'</bdi> • کد ملی مالک: '+(o.owner||"—")+'<br>🧺 '+(o.items||[]).map(function(i){return i.title}).join("، ")+'<br>📝 پلاک: '+(o.plate||"—")+' • 💰 '+fmt(feeOf(o))+(o.coupon?" (کد: "+o.coupon+")":"")+'<br><small style="color:#94a3b8">'+(o.t||"")+'</small></div><div class="abtns"><button class="abtn" style="background:#22c55e;color:#fff" onclick="setSt(\''+o.code+'\',\'accepted\')">✅ تایید پرداخت / قبول</button><button class="abtn" style="background:#6366f1;color:#fff" onclick="setSt(\''+o.code+'\',\'doing\')">⏳ در حال انجام</button><button class="abtn" style="background:#16a34a;color:#fff" onclick="setSt(\''+o.code+'\',\'done\')">🎉 انجام شد</button><button class="abtn" style="background:#ef4444;color:#fff" onclick="setSt(\''+o.code+'\',\'rejected\')">✖ رد</button><button class="abtn" style="background:#fff;color:#0f172a" onclick="copyPay(\''+o.code+'\')">📋 کپی فاکتور</button><button class="abtn" style="background:transparent;border:1px solid #ef4444;color:#fca5a5" onclick="delO(\''+o.code+'\')">حذف</button></div><div class="chat-box"><b style="font-size:12.5px">💬 چت مشتری:</b><div class="chat-msgs" style="max-height:180px">'+((o.chat||[]).map(function(m){if(m.img)return '<div class="msg '+(m.who==="me"?"me":"them")+'">'+(m.text||"")+'<br><img src="'+m.img+'"></div>';return '<div class="msg '+(m.who==="sys"?"sys":(m.who==="me"?"me":"them"))+'">'+m.text+"</div>"}).join("")||'<span style="color:#94a3b8;font-size:12px">پیامی نیست</span>')+'</div><div class="chat-send"><input id="ai-'+o.code+'" placeholder="پاسخ کارشناس..."><button class="abtn" style="background:#fbbf24;color:#1a1005" onclick="admReply(\''+o.code+'\')">ارسال</button></div></div></div>'});box.innerHTML=h}
+window.setSt=function(code,st){var a=loadO();for(var i=0;i<a.length;i++)if(a[i].code===code){a[i].st=st;a[i].chat=a[i].chat||[];a[i].chat.push({who:"sys",text:"📌 وضعیت شد: "+stName(st)});break}saveO(a);renderOrders()};
+window.delO=function(code){if(!confirm("حذف شود؟"))return;saveO(loadO().filter(function(o){return o.code!==code}));renderOrders()};
+window.admReply=function(code){var inp=$("ai-"+code);if(!inp||!inp.value.trim())return;var a=loadO();for(var i=0;i<a.length;i++)if(a[i].code===code){a[i].chat=a[i].chat||[];a[i].chat.push({who:"them",text:inp.value.trim()});break}saveO(a);renderOrders()};
+function renderPrints(){var a=loadP();var box=$("tab-prints");if(!box)return;var s=loadS();if(!a.length){box.innerHTML='<p style="padding:18px;color:#94a3b8">هنوز سفارش پرینتی نیامده. مشتری از بخش «پرینت» عکس را برش می‌زند و با دکمه «ارسال به کافی‌نت» می‌فرستد.</p>';return}
+var h='<div class="note-box" style="margin:12px 18px">🖨️ سفارش‌های پرینت مشتری‌ها — عکس نهایی برش‌خورده را همین‌جا ببین، دانلود کن و چاپ بگیر. تعرفه: A4 '+fmt(+(s.printA4||8000))+' • A5 '+fmt(+(s.printA5||4000))+'</div>';a.forEach(function(o){h+='<div class="ord'+(o.st==="pending"?" new":"")+'"><div class="ord-head"><span class="code-chip">'+o.code+'</span><span class="st-chip '+(o.st==="done"?"st-done":"st-pending")+'">'+(o.st==="done"?"🎉 چاپ شد":"🕐 جدید")+'</span></div><div style="font-size:13px;margin-top:8px">👤 '+escH(o.name)+' • <bdi>'+escH(o.phone)+'</bdi><br>📄 '+o.paper+' × '+o.count+' برگ • 💰 '+fmt(o.total)+'<br><small style="color:#94a3b8">'+(o.t||"")+'</small></div><div style="margin-top:8px"><img src="'+o.img+'" style="max-width:220px;border-radius:10px;border:1px solid #ffffff33"></div><div class="abtns"><a class="abtn" style="background:#22c55e;color:#fff;text-decoration:none" href="'+o.img+'" download="'+o.code+'.jpg">⬇️ دانلود عکس</a><button class="abtn" style="background:#16a34a;color:#fff" onclick="setPSt(\''+o.code+'\',\'done\')">🎉 چاپ شد</button><button class="abtn" style="background:#6366f1;color:#fff" onclick="setPSt(\''+o.code+'\',\'pending\')">🕐 برگرد به جدید</button><button class="abtn" style="background:transparent;border:1px solid #ef4444;color:#fca5a5" onclick="delP(\''+o.code+'\')">حذف</button></div></div>'});box.innerHTML=h}
+window.setPSt=function(code,st){var a=loadP();for(var i=0;i<a.length;i++)if(a[i].code===code)a[i].st=st;saveP(a);renderPrints()};
+window.delP=function(code){if(!confirm("حذف شود؟"))return;saveP(loadP().filter(function(o){return o.code!==code}));renderPrints()};
+function renderInqs(){var a=loadI();var box=$("tab-inqs");if(!box)return;if(!a.length){box.innerHTML='<p style="padding:18px;color:#94a3b8">هنوز استعلامی ثبت نشده.</p>';return}
+var h='<table class="adm-t"><tr><th>زمان</th><th>پلاک</th><th>کد ملی مالک</th><th>موبایل</th><th>جمع بدهی</th></tr>';a.forEach(function(x){h+="<tr><td>"+x.t+"</td><td>"+x.plate+"</td><td>"+x.owner+"</td><td>"+x.phone+"</td><td>"+(+x.total).toLocaleString("fa-IR")+"</td></tr>"});h+='</table><div style="padding:0 18px 20px"><button class="abtn" style="background:transparent;border:1px solid #ef4444;color:#fca5a5" onclick="clearInq()">پاک کردن همه</button></div>';box.innerHTML=h}
+window.clearInq=function(){if(confirm("همه استعلام‌ها پاک شود؟")){saveI([]);renderInqs()}};
+function applyDebtRows(){var s=loadS();var m={"row-d1":"show_d1","row-d2":"show_d2","row-d3":"show_d3","row-d4":"show_d4"};for(var id in m){var el=document.getElementById(id);if(el)el.style.display=(s[m[id]]==="0")?"none":"flex"}}
+function applySections(s){var m=[["services","show_services"],["free","show_free"],["order","show_order"],["print","show_print"],["status","show_status"],["track","show_track"],["chat","show_chat"],["support","show_support"]];m.forEach(function(x){var el=document.getElementById(x[0]);if(el)el.style.display=(s[x[1]]==="0")?"none":""});var st=document.querySelector(".stats");if(st)st.style.display=(s.show_stats==="0")?"none":"";var mq=document.querySelector(".marquee");if(mq)mq.style.display=(s.show_banner==="0")?"none":""}
+function applyS(s){document.querySelectorAll("[data-t]").forEach(function(el){var k=el.getAttribute("data-t");if(s[k]!=null&&s[k]!=="")el.textContent=s[k]});applySections(s);applyDebtRows();
+if(s.phone){document.querySelectorAll(".phone-only").forEach(function(e){e.textContent=s.phone});document.querySelectorAll(".phone-link").forEach(function(a){a.href="tel:"+s.phone});var tp=$("trustPhone");if(tp)tp.textContent=s.phone;var fp=$("freePhoneShow");if(fp)fp.textContent=s.phone}
+if(s.rubika){document.querySelectorAll(".rubika-id-only").forEach(function(e){e.textContent=s.rubika});var pv=$("pvIdText");if(pv)pv.textContent="@"+s.rubika}
+if(s.hours){document.querySelectorAll('[data-t="hours"]')}
+if(s.theme)document.body.setAttribute("data-theme",s.theme);
+if(s.c1)document.documentElement.style.setProperty("--c1",s.c1);if(s.c2)document.documentElement.style.setProperty("--c2",s.c2);
+var cn=$("cardNum");if(cn&&s.card)cn.textContent=s.card;var sh=$("shebaNum");if(sh&&s.sheba)sh.textContent=s.sheba;
+var pl=$("payLinkBox");if(pl)pl.innerHTML=s.paylink?'<a class="btn btn-ok w100" href="'+s.paylink+'" target="_blank">🔗 پرداخت آنلاین</a>':"";
+try{if(typeof updatePrintTotal==="function")updatePrintTotal()}catch(e){}var y=$("year");if(y)y.textContent=new Date().toLocaleDateString("fa-IR",{year:"numeric"});renderLive()}
+function fillAdmin(){var s=loadS();document.querySelectorAll("[data-set]").forEach(function(el){var k=el.getAttribute("data-set");if(s[k]!=null)el.value=s[k]})}
+document.querySelectorAll("[data-set]").forEach(function(el){el.addEventListener("input",function(){var s=loadS();s[el.getAttribute("data-set")]=el.value;saveS(s);applyS(s);var d=$("saveDot");if(d){d.textContent="● ذخیره شد ✓ "+new Date().toLocaleTimeString("fa-IR");setTimeout(function(){d.textContent="● ذخیره خودکار روشن است"},2000)}})});
+$("resetSettings").onclick=function(){if(confirm("همه تنظیمات به پیش‌فرض برگردد؟")){localStorage.removeItem(SKEY);applyS(loadS());fillAdmin();renderServices()}};
+$("exportBtn").onclick=function(){copyTxt(localStorage.getItem(SKEY)||"{}")};
+$("adminLink").onclick=function(e){e.preventDefault();$("passModal").classList.add("open")};
+$("passX").onclick=function(){$("passModal").classList.remove("open")};
+$("passGo").onclick=function(){if($("passIn").value===adminPass()){$("passModal").classList.remove("open");$("adminPanel").classList.add("open");renderOrders();renderInqs();renderPrints();fillAdmin();$("passIn").value=""}else toast("❌ رمز اشتباه است")};
+$("admClose").onclick=function(){$("adminPanel").classList.remove("open")};
+$("menuBtn").onclick=function(){$("nav").classList.toggle("open")};
+/* reveal + counters */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("vis");io.unobserve(e.target)}})},{threshold:.1});
+document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target,t=+el.getAttribute("data-tn"),c=0,st=Math.max(1,Math.round(t/60));var h=setInterval(function(){c+=st;if(c>=t){c=t;clearInterval(h)}el.textContent=c.toLocaleString("fa-IR")},30);cio.unobserve(el)})});
+document.querySelectorAll(".counter").forEach(function(el){cio.observe(el)});
+applyS(loadS());renderServices();renderCart();migrateOldUser();updatePrintTotal();renderPrints();applyDebtRows();checkGate();
+var adb=$("addSvcBtn");if(adb&&!adb._b){adb._b=true;adb.onclick=function(){var t=$("newSvcT").value.trim(),d=$("newSvcD").value.trim(),pr=$("newSvcP").value.trim(),f=$("newSvcF").value.replace(/[^0-9]/g,""),ic=$("newSvcI").value.trim()||"🧾",c=$("newSvcC").value||"avarez";if(!t||!f){toast("❌ عنوان و کارمزد واقعی را بنویس");return}var all=getSvcs();all.push({id:"s"+Date.now(),t:t,d:d,price:pr,fee:f,i:ic,cat:c});saveSvcs(all);$("newSvcT").value="";$("newSvcD").value="";$("newSvcP").value="";$("newSvcF").value="";renderServices();toast("✅ کارت جدید اضافه شد")}};
+</script>
+</body>
+</html>
